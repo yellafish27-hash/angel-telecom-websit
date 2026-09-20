@@ -217,3 +217,34 @@
 .footer-social-icons .footer-icon:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(8,42,70,.12)}
 .footer-social-icons svg{width:21px;height:21px;display:block}
 @media(max-width:760px){.footer-social-icons{margin-top:13px;gap:9px}.footer-social-icons .footer-icon{width:38px;height:38px}.footer-social-icons svg{width:19px;height:19px}}
+
+/* Premium B2B About page */
+.about-page .topbar{display:none}
+.about-page .nav{background:#fff;border-bottom:1px solid #e5edf2}
+.about-page .nav-inner{min-height:100px}
+.about-page .logo-img{width:270px}
+.about-page .nav-links{display:none}
+.about-page .about-hero{background:#fff;padding:54px 0 28px}
+.about-page .about-hero-copy{max-width:1180px}
+.about-page .about-hero h1{font-size:clamp(3.2rem,7vw,6.5rem);line-height:.93;letter-spacing:-.075em;color:var(--navy);margin:0 0 42px;font-weight:950}
+.about-page .about-hero p{font-size:clamp(1.15rem,2vw,1.7rem);line-height:1.48;color:#172b40;max-width:1160px;margin:0 0 30px}
+.about-page .about-approach{background:#fff;padding:18px 0 65px}
+.about-page .about-approach-panel{background:var(--navy);color:#fff;border-radius:30px;padding:48px 56px 42px;max-width:1240px;margin:0 auto}
+.about-page .about-approach-panel .eyebrow{color:#58c9c3;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+.about-page .about-approach-panel h2{font-size:clamp(2.6rem,5vw,4.4rem);line-height:.98;letter-spacing:-.065em;margin:20px 0 34px;color:#fff}
+.about-page .about-check-list{list-style:none;margin:0;padding:0}
+.about-page .about-check-list li{position:relative;padding:22px 0 22px 46px;border-bottom:1px solid rgba(255,255,255,.14);font-size:clamp(1.05rem,1.7vw,1.45rem);line-height:1.35;color:#f5f8fa}
+.about-page .about-check-list li:before{content:"✓";position:absolute;left:0;top:20px;color:#71d8d2;font-weight:950;font-size:1.7rem}
+.about-page .about-check-list li:last-child{border-bottom:0}
+@media(max-width:760px){
+ .about-page .nav-inner{min-height:82px}
+ .about-page .logo-img{width:205px}
+ .about-page .about-hero{padding:28px 0 8px}
+ .about-page .about-hero h1{font-size:3.45rem;line-height:.91;margin-bottom:30px}
+ .about-page .about-hero p{font-size:1.28rem;line-height:1.52;margin-bottom:30px}
+ .about-page .about-approach{padding:18px 0 42px}
+ .about-page .about-approach-panel{border-radius:28px;padding:35px 28px 28px}
+ .about-page .about-approach-panel h2{font-size:2.65rem;line-height:.98;margin:17px 0 25px}
+ .about-page .about-check-list li{font-size:1.05rem;padding:19px 0 19px 43px}
+ .about-page .about-check-list li:before{top:16px}
+}
