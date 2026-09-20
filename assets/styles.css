@@ -349,7 +349,7 @@
 }
 
 /* Premium dark footer — brand-safe treatment */
-.premium-footer{background:#071f36;color:#edf5fa;padding:68px 0 24px}
+.premium-footer{background:#061d31;color:#edf5fa;padding:68px 0 24px}
 .premium-footer-grid{display:grid;grid-template-columns:2.1fr 1fr 1.35fr 1.25fr;gap:44px;align-items:start}
 .premium-footer a{color:#edf5fa;text-decoration:none}
 .premium-footer h3{color:#fff;font-size:1.35rem;margin:0 0 22px}
@@ -377,7 +377,7 @@
 }
 
 /* Final responsive footer implementation */
-.premium-footer{background:#071f36;color:#edf5fa;padding:58px 0 22px}
+.premium-footer{background:#061d31;color:#edf5fa;padding:58px 0 22px}
 .premium-footer-grid{display:grid;grid-template-columns:1.7fr 1fr 1.2fr 1.05fr;gap:38px;align-items:start}
 .premium-footer-brand{min-width:0}
 .premium-footer h3{color:#fff;font-size:1.15rem;margin:0 0 17px}
@@ -458,7 +458,7 @@
 /* Footer logo: keep the exact Angel mark/wordmark colours while making 'telecom' white on navy */
 .footer-logo-safe{position:relative;overflow:hidden;width:270px;height:86px;display:block}
 .footer-logo-safe img{position:absolute;left:0;top:0;width:270px;height:auto;z-index:1}
-.footer-logo-safe:after{content:"";position:absolute;left:102px;right:0;top:45px;height:38px;background:#071f36;z-index:2}
+.footer-logo-safe:after{content:"";position:absolute;left:102px;right:0;top:45px;height:38px;background:#061d31;z-index:2}
 .footer-logo-telecom{position:absolute;left:102px;top:43px;z-index:3;color:#fff;font-size:39px;line-height:1;font-weight:400;letter-spacing:-.055em}
 @media(max-width:900px){.footer-logo-safe{width:235px;height:76px}.footer-logo-safe img{width:235px}.footer-logo-safe:after{left:89px;top:39px}.footer-logo-telecom{left:89px;top:37px;font-size:34px}}
 @media(max-width:600px){.footer-logo-safe{width:210px;height:69px}.footer-logo-safe img{width:210px}.footer-logo-safe:after{left:80px;top:35px}.footer-logo-telecom{left:80px;top:33px;font-size:30px}}
