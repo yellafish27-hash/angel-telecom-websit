@@ -313,3 +313,37 @@
  .about-page .about-values-grid{grid-template-columns:1fr}
  .about-page .about-value,.about-page .about-value:nth-child(2n){border-right:0;padding:18px 5px}
 }
+
+/* iPhone/tablet safeguard: keep About page responsive even when Safari uses an unusual viewport scale */
+@media (max-width:1200px){
+ .about-page .nav-links{display:none}
+ .about-page .nav-inner{min-height:78px}
+ .about-page .brand-logo .logo-img{width:205px}
+ .about-page .about-hero-grid{grid-template-columns:1fr;gap:26px}
+ .about-page .about-stuart-hero{padding:28px 0 34px}
+ .about-page .about-stuart-copy h1{font-size:clamp(3rem,8vw,3.6rem)}
+ .about-page .about-stuart-copy p{font-size:1.08rem;max-width:680px}
+ .about-page .about-stuart-image{height:auto;aspect-ratio:4/5;max-height:560px;width:100%}
+ .about-page .about-stuart-image img{object-position:center 35%}
+ .about-page .about-intro{padding-top:38px}
+ .about-page .about-intro h2{font-size:clamp(2.8rem,8vw,3.5rem)}
+ .about-page .about-intro p{font-size:1.12rem}
+ .about-page .about-approach-grid{grid-template-columns:1fr;gap:0}
+ .about-page .about-values-grid{grid-template-columns:1fr 1fr}
+ .about-page .about-value{border-right:1px solid #dfe7ed;border-bottom:1px solid #dfe7ed}
+ .about-page .about-value:nth-child(2n){border-right:0}
+}
+@media (max-width:600px){
+ .about-page .container{width:calc(100% - 32px)}
+ .about-page .brand-logo .logo-img{width:190px}
+ .about-page .about-stuart-copy h1{font-size:3.15rem}
+ .about-page .about-stuart-copy p{font-size:1.05rem}
+ .about-page .about-stuart-image{aspect-ratio:4/5}
+ .about-page .about-intro h2{font-size:2.9rem}
+ .about-page .about-intro p{font-size:1.05rem}
+ .about-page .about-approach-panel{border-radius:24px;padding:30px 22px 24px}
+ .about-page .about-approach-panel h2{font-size:2.55rem}
+ .about-page .about-check-list li{font-size:1rem;padding:16px 0 16px 38px}
+ .about-page .about-values-grid{grid-template-columns:1fr}
+ .about-page .about-value,.about-page .about-value:nth-child(2n){border-right:0;padding:18px 5px}
+}
