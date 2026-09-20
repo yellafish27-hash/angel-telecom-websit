@@ -7,7 +7,7 @@
 <clipPath id="angelText"><rect x="650" y="0" width="1170" height="340"/></clipPath>
 <clipPath id="telecomText"><rect x="650" y="300" width="1170" height="349"/></clipPath>
 </defs>
-<image href="angel-logo-clean.png" x="0" y="0" width="1820" height="649" clip-path="url(#disc)"/>
-<image href="angel-logo-clean.png" x="0" y="0" width="1820" height="649" clip-path="url(#angelText)" filter="url(#blueTransparent)"/>
-<image href="angel-logo-clean.png" x="0" y="0" width="1820" height="649" clip-path="url(#telecomText)" filter="url(#whiteFromNavy)"/>
+<image href="https://angel-telecom.co.uk/assets/angel-logo-clean.png" x="0" y="0" width="1820" height="649" clip-path="url(#disc)"/>
+<image href="https://angel-telecom.co.uk/assets/angel-logo-clean.png" x="0" y="0" width="1820" height="649" clip-path="url(#angelText)" filter="url(#blueTransparent)"/>
+<image href="https://angel-telecom.co.uk/assets/angel-logo-clean.png" x="0" y="0" width="1820" height="649" clip-path="url(#telecomText)" filter="url(#whiteFromNavy)"/>
 </svg>
