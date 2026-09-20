@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1820 649" role="img" aria-labelledby="title desc">
+<title id="title">Angel Telecom</title><desc id="desc">Angel Telecom logo</desc>
+<defs>
+<filter id="blueTransparent" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -1 0 0 0 1"/></filter>
+<filter id="whiteFromNavy" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 -1 0 0 0 1"/></filter>
+<clipPath id="disc"><circle cx="325" cy="325" r="325"/></clipPath>
+<clipPath id="angelText"><rect x="650" y="0" width="1170" height="340"/></clipPath>
+<clipPath id="telecomText"><rect x="650" y="300" width="1170" height="349"/></clipPath>
+</defs>
+<image href="angel-logo-clean.png" x="0" y="0" width="1820" height="649" clip-path="url(#disc)"/>
+<image href="angel-logo-clean.png" x="0" y="0" width="1820" height="649" clip-path="url(#angelText)" filter="url(#blueTransparent)"/>
+<image href="angel-logo-clean.png" x="0" y="0" width="1820" height="649" clip-path="url(#telecomText)" filter="url(#whiteFromNavy)"/>
+</svg>
