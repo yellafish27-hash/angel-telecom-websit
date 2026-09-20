@@ -469,3 +469,35 @@
  .premium-footer-section.collapsed h3:after{transform:rotate(-90deg)}
  .premium-footer-section.collapsed p{display:none}
 }
+
+
+/* Business Mobiles — premium B2B page */
+.business-mobile-hero{background:linear-gradient(135deg,#061f38 0%,#0b4f83 62%,#087fba 100%);padding:78px 0 82px;position:relative;overflow:hidden}
+.business-mobile-hero:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-190px;top:-210px;background:rgba(91,215,211,.13)}
+.business-mobile-hero .container{position:relative;z-index:1;max-width:1240px}
+.business-mobile-hero .eyebrow{color:#62ddd5}
+.business-mobile-hero h1{color:#fff;font-size:clamp(3.2rem,6.2vw,6.2rem);line-height:.92;letter-spacing:-.075em;max-width:900px;margin:18px 0 24px}
+.business-mobile-hero p{color:#dcecf5;font-size:1.2rem;line-height:1.55;max-width:790px;margin:0 0 30px}
+.business-mobile-hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+.business-mobile-hero .btn-secondary{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.42);color:#fff}
+.business-mobile-hero .btn-secondary:hover{background:#fff;color:var(--navy)}
+.business-mobile-hero + .section{padding-top:72px}
+.business-mobile-hero + .section .section-head h2{max-width:650px}
+.business-mobile-hero + .section .section-head p{font-size:1rem;line-height:1.6}
+.business-mobile-hero ~ .section .card{min-height:205px;padding:30px}
+.business-mobile-hero ~ .section .card h3{font-size:1.2rem}
+.business-mobile-hero ~ .section .card p{line-height:1.55}
+.business-mobile-hero ~ .section.alt{background:#f5fafc}
+.business-mobile-hero ~ .section.alt .split{gap:70px}
+.business-mobile-hero ~ .section.alt h2{font-size:clamp(2.3rem,4vw,3.7rem);line-height:1;letter-spacing:-.06em}
+.business-mobile-hero ~ .section.alt p{line-height:1.6}
+.business-mobile-hero ~ .section.alt .panel{box-shadow:0 20px 45px rgba(8,42,70,.12);padding:42px}
+.business-mobile-hero ~ .section:last-of-type{padding-bottom:80px}
+@media(max-width:600px){
+ .business-mobile-hero{padding:54px 0 60px}
+ .business-mobile-hero h1{font-size:3.35rem}
+ .business-mobile-hero p{font-size:1.05rem}
+ .business-mobile-hero ~ .section.alt .split{gap:30px}
+ .business-mobile-hero ~ .section.alt .panel{padding:30px}
+ .business-mobile-hero ~ .section .card{min-height:0}
+}
