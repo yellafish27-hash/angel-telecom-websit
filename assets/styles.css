@@ -540,3 +540,31 @@
  .sim-only-highlight{padding:28px 0}
  .sim-only-highlight h2{font-size:2.35rem}
 }
+
+
+/* Devices & Upgrades — premium B2B page */
+.devices-hero{background:linear-gradient(135deg,#061f38 0%,#0b4f83 62%,#087fba 100%);padding:78px 0 82px;position:relative;overflow:hidden}
+.devices-hero:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-200px;top:-220px;background:rgba(91,215,211,.13)}
+.devices-hero .container{position:relative;z-index:1}
+.devices-hero .eyebrow{color:#62ddd5}
+.devices-hero h1{color:#fff;font-size:clamp(3.1rem,6vw,5.9rem);line-height:.93;letter-spacing:-.075em;max-width:900px;margin:18px 0 24px}
+.devices-hero p{color:#dcecf5;font-size:1.18rem;line-height:1.55;max-width:780px;margin:0 0 30px}
+.devices-hero .btn-secondary{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.42);color:#fff}
+.devices-hero + .section{padding-top:72px}
+.devices-hero + .section .card{min-height:205px}
+.devices-lifecycle-strip{background:#eaf7f7;border-top:1px solid #d4ebe9;border-bottom:1px solid #d4ebe9;padding:36px 0}
+.devices-lifecycle-strip .container{display:grid;grid-template-columns:1fr 1.15fr auto;gap:30px;align-items:center}
+.devices-lifecycle-strip h2{font-size:clamp(2rem,3.4vw,3rem);line-height:1;letter-spacing:-.06em;color:var(--navy);margin:9px 0 0}
+.devices-lifecycle-strip p{color:#526879;line-height:1.55;margin:0}
+.devices-lifecycle-strip a{color:var(--blue);font-weight:850;text-decoration:none;white-space:nowrap}
+.devices-hero ~ .section.alt h2{font-size:clamp(2.3rem,4vw,3.7rem);line-height:1;letter-spacing:-.06em}
+.devices-hero ~ .section.alt .card{box-shadow:0 8px 25px rgba(8,42,70,.045)}
+@media(max-width:900px){.devices-lifecycle-strip .container{grid-template-columns:1fr;gap:12px}}
+@media(max-width:600px){
+ .devices-hero{padding:54px 0 60px}
+ .devices-hero h1{font-size:3.25rem}
+ .devices-hero p{font-size:1.05rem}
+ .devices-lifecycle-strip{padding:28px 0}
+ .devices-lifecycle-strip h2{font-size:2.35rem}
+ .devices-hero + .section .card{min-height:0}
+}
