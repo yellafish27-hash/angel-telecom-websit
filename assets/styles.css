@@ -693,3 +693,14 @@
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
 .form-note{font-size:.86rem!important;color:#718492!important;margin:-6px 0 22px}
 @media(max-width:600px){.contact-form-wrap{padding:26px 20px;border-radius:22px}.form-grid{grid-template-columns:1fr}}
+
+/* Controller upgrades */
+.controller-upgrades{background:#f5f9fc}
+.controller-upgrade-panel{display:grid;grid-template-columns:1.15fr .85fr;gap:42px;align-items:stretch;background:linear-gradient(135deg,#06233b,#0b4e78);border-radius:30px;padding:44px;color:#fff;box-shadow:0 18px 50px rgba(6,31,56,.12)}
+.controller-upgrade-panel h2{color:#fff;font-size:clamp(2.2rem,4vw,3.5rem);line-height:1.02;letter-spacing:-.055em;margin:10px 0 18px}
+.controller-upgrade-panel p{color:#dcecf5;font-size:1.04rem;line-height:1.65;max-width:760px}
+.controller-upgrade-points{display:grid;gap:12px}
+.controller-upgrade-points>div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.13);border-radius:18px;padding:20px}
+.controller-upgrade-points strong{display:block;color:#fff;font-size:1.05rem;margin-bottom:5px}
+.controller-upgrade-points span{display:block;color:#c8dce8;line-height:1.45}
+@media(max-width:760px){.controller-upgrade-panel{grid-template-columns:1fr;padding:28px 22px;border-radius:24px}}
