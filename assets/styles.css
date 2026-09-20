@@ -679,3 +679,17 @@
 .contact-repair{border-top:1px solid var(--line)}
 .contact-repair h2{font-size:clamp(2.3rem,4vw,3.7rem);line-height:1;letter-spacing:-.06em;margin:10px 0 16px}
 @media(max-width:600px){.contact-hero{padding:54px 0 60px}.contact-hero h1{font-size:3.25rem}.contact-hero p{font-size:1.05rem}}
+
+
+/* Online enquiry form */
+.contact-form-section{background:#f5f9fc}
+.contact-form-wrap{max-width:920px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:30px;padding:42px;box-shadow:0 18px 50px rgba(8,42,70,.07)}
+.contact-form-wrap h2{font-size:clamp(2.3rem,4vw,3.7rem);line-height:1;letter-spacing:-.06em;color:var(--navy);margin:10px 0 14px}
+.contact-form-wrap>p{color:var(--muted);font-size:1.05rem;max-width:700px;margin-bottom:30px}
+.angel-form label{display:block;color:var(--navy);font-weight:750;font-size:.95rem;margin-bottom:20px}
+.angel-form input,.angel-form select,.angel-form textarea{display:block;width:100%;margin-top:8px;border:1px solid #c9d8e2;border-radius:12px;padding:13px 14px;font:inherit;color:var(--navy);background:#fff;box-sizing:border-box}
+.angel-form input:focus,.angel-form select:focus,.angel-form textarea:focus{outline:2px solid rgba(24,199,208,.25);border-color:#18c7d0}
+.angel-form input[type=file]{padding:11px;background:#f7fafc}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+.form-note{font-size:.86rem!important;color:#718492!important;margin:-6px 0 22px}
+@media(max-width:600px){.contact-form-wrap{padding:26px 20px;border-radius:22px}.form-grid{grid-template-columns:1fr}}
