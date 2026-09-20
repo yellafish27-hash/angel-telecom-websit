@@ -517,3 +517,26 @@
  .business-network-strip .container{display:block}
  .business-network-strip strong{display:block;margin:5px 0 8px;font-size:.94rem}
 }
+
+
+/* SIM Only — premium B2B page */
+.sim-only-hero{background:linear-gradient(135deg,#061f38 0%,#0b4f83 62%,#087fba 100%);padding:78px 0 82px;position:relative;overflow:hidden}
+.sim-only-hero:after{content:"";position:absolute;width:500px;height:500px;border-radius:50%;right:-190px;top:-220px;background:rgba(91,215,211,.13)}
+.sim-only-hero .container{position:relative;z-index:1}
+.sim-only-hero .eyebrow{color:#62ddd5}
+.sim-only-hero h1{color:#fff;font-size:clamp(3.1rem,6vw,5.8rem);line-height:.94;letter-spacing:-.075em;max-width:900px;margin:18px 0 24px}
+.sim-only-hero p{color:#dcecf5;font-size:1.18rem;line-height:1.55;max-width:760px;margin:0 0 30px}
+.sim-only-hero .btn-secondary{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.42);color:#fff}
+.sim-only-highlight{background:#eaf7f7;border-top:1px solid #d4ebe9;border-bottom:1px solid #d4ebe9;padding:36px 0}
+.sim-only-highlight .container{display:grid;grid-template-columns:1fr 1.2fr auto;gap:30px;align-items:center}
+.sim-only-highlight h2{font-size:clamp(2rem,3.5vw,3rem);line-height:1;letter-spacing:-.06em;color:var(--navy);margin:10px 0 0}
+.sim-only-highlight p{color:#526879;line-height:1.55;margin:0}
+.sim-only-highlight a{color:var(--blue);font-weight:850;text-decoration:none;white-space:nowrap}
+@media(max-width:900px){.sim-only-highlight .container{grid-template-columns:1fr;gap:12px}}
+@media(max-width:600px){
+ .sim-only-hero{padding:54px 0 60px}
+ .sim-only-hero h1{font-size:3.25rem}
+ .sim-only-hero p{font-size:1.05rem}
+ .sim-only-highlight{padding:28px 0}
+ .sim-only-highlight h2{font-size:2.35rem}
+}
