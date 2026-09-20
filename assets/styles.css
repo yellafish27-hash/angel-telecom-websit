@@ -456,10 +456,8 @@
 @media(max-width:900px){.offers-heading{grid-template-columns:1fr;gap:12px}.offer-cards{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.offers-section{padding:34px 15px 38px}.offers-heading h2{font-size:2.25rem}.offers-heading>p{font-size:.86rem}.offer-cards{gap:10px}.offer-card{padding:17px 13px}.offer-icon{height:62px;font-size:1.35rem}.offer-card h3{font-size:.88rem}.offer-card p{font-size:.72rem;min-height:50px}.offer-card b{font-size:.7rem}.offers-note{align-items:flex-start;flex-wrap:wrap;padding:15px}.offers-note .blue-button{width:100%;margin-top:4px}}
 /* Footer logo: keep the exact Angel mark/wordmark colours while making 'telecom' white on navy */
-.footer-logo-safe{position:relative;overflow:hidden;width:270px;height:86px;display:block}
-.footer-logo-safe img{position:absolute;left:0;top:0;width:270px;height:auto;z-index:1}
-.footer-logo-safe:after{content:"";position:absolute;left:102px;right:0;top:45px;height:38px;background:#061d31;z-index:2}
-.footer-logo-telecom{position:absolute;left:102px;top:43px;z-index:3;color:#fff;font-size:39px;line-height:1;font-weight:400;letter-spacing:-.055em}
+.footer-logo-wrap{width:270px;max-width:100%;display:block;background:transparent}
+.footer-logo-wrap img{display:block;width:100%;height:auto;background:transparent}
 @media(max-width:900px){.footer-logo-safe{width:235px;height:76px}.footer-logo-safe img{width:235px}.footer-logo-safe:after{left:89px;top:39px}.footer-logo-telecom{left:89px;top:37px;font-size:34px}}
 @media(max-width:600px){.footer-logo-safe{width:210px;height:69px}.footer-logo-safe img{width:210px}.footer-logo-safe:after{left:80px;top:35px}.footer-logo-telecom{left:80px;top:33px;font-size:30px}}
 /* Mobile footer accordions */
