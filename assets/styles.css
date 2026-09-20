@@ -736,3 +736,12 @@
  .footer-email-button{font-size:1rem;padding:14px 24px}
  .premium-footer-bottom{margin-top:26px;padding-top:17px;font-size:.8rem;gap:7px;flex-direction:column;align-items:flex-start}
 }
+
+/* Final footer layout correction */
+.premium-footer-brand{grid-column:1/-1!important;width:100%}
+.footer-site-logo{width:max-content!important;max-width:100%;display:block;margin:0 0 28px}
+.footer-site-logo img{width:390px!important;max-width:100%;height:auto;display:block}
+@media(max-width:760px){
+ .premium-footer-brand{grid-column:auto!important}
+ .footer-site-logo img{width:250px!important;max-width:100%}
+}
