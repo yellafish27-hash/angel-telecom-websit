@@ -568,3 +568,32 @@
  .devices-lifecycle-strip h2{font-size:2.35rem}
  .devices-hero + .section .card{min-height:0}
 }
+
+
+/* Repairs — premium B2B page */
+.repairs-hero{background:linear-gradient(135deg,#061f38 0%,#084e82 58%,#0b8fa5 100%);padding:78px 0 84px;position:relative;overflow:hidden}
+.repairs-hero:after{content:"";position:absolute;width:560px;height:560px;border-radius:50%;right:-220px;top:-260px;background:rgba(98,221,213,.14)}
+.repairs-hero .container{position:relative;z-index:1}
+.repairs-hero .eyebrow{color:#65ded5}
+.repairs-hero h1{color:#fff;font-size:clamp(3.1rem,6vw,5.8rem);line-height:.93;letter-spacing:-.075em;max-width:920px;margin:18px 0 24px}
+.repairs-hero p{color:#dcecf5;font-size:1.18rem;line-height:1.55;max-width:820px;margin:0 0 30px}
+.repairs-hero .btn-secondary{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.42);color:#fff}
+.repairs-hero + .section{padding-top:72px}
+.repairs-hero + .section .card{min-height:205px}
+.repairs-support-strip{background:#061f38;color:#fff;padding:38px 0}
+.repairs-support-strip .container{display:grid;grid-template-columns:1fr 1.1fr auto;gap:30px;align-items:center}
+.repairs-support-strip .eyebrow{color:#63ddd4}
+.repairs-support-strip h2{color:#fff;font-size:clamp(2rem,3.5vw,3rem);line-height:1;letter-spacing:-.06em;margin:8px 0 0}
+.repairs-support-strip p{color:#c9dce8;line-height:1.55;margin:0}
+.repairs-support-strip a{color:#68ded6;font-weight:850;text-decoration:none;white-space:nowrap}
+.repairs-business h2{font-size:clamp(2.3rem,4vw,3.7rem);line-height:1;letter-spacing:-.06em}
+.repairs-business .panel{background:linear-gradient(145deg,#061f38,#0a527f);box-shadow:0 20px 50px rgba(6,31,56,.16)}
+@media(max-width:900px){.repairs-support-strip .container{grid-template-columns:1fr;gap:12px}}
+@media(max-width:600px){
+ .repairs-hero{padding:54px 0 60px}
+ .repairs-hero h1{font-size:3.25rem}
+ .repairs-hero p{font-size:1.05rem}
+ .repairs-support-strip{padding:30px 0}
+ .repairs-support-strip h2{font-size:2.35rem}
+ .repairs-hero + .section .card{min-height:0}
+}
