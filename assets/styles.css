@@ -501,3 +501,19 @@
  .business-mobile-hero ~ .section.alt .panel{padding:30px}
  .business-mobile-hero ~ .section .card{min-height:0}
 }
+
+
+.business-mobile-hero .hero-trust-row{display:flex;gap:24px;flex-wrap:wrap;margin-top:32px;color:#dff6f4;font-size:.88rem;font-weight:700}
+.business-mobile-hero .hero-trust-row span{display:inline-flex;align-items:center;gap:7px}
+.business-mobile-hero .hero-trust-row span::first-letter{color:#62ddd5}
+.business-network-strip{background:#eaf7f7;border-top:1px solid #d4ebe9;border-bottom:1px solid #d4ebe9;padding:22px 0}
+.business-network-strip .container{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.business-network-strip span{font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;font-weight:900;color:var(--teal)}
+.business-network-strip strong{color:var(--navy);font-size:1rem;flex:1}
+.business-network-strip a{color:var(--blue);font-weight:800;text-decoration:none}
+@media(max-width:600px){
+ .business-mobile-hero .hero-trust-row{gap:11px 18px;font-size:.8rem}
+ .business-network-strip{padding:18px 0}
+ .business-network-strip .container{display:block}
+ .business-network-strip strong{display:block;margin:5px 0 8px;font-size:.94rem}
+}
