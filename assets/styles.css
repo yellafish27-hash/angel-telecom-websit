@@ -347,3 +347,31 @@
  .about-page .about-values-grid{grid-template-columns:1fr}
  .about-page .about-value,.about-page .about-value:nth-child(2n){border-right:0;padding:18px 5px}
 }
+
+/* Premium dark footer — brand-safe treatment */
+.premium-footer{background:#071f36;color:#edf5fa;padding:68px 0 24px}
+.premium-footer-grid{display:grid;grid-template-columns:2.1fr 1fr 1.35fr 1.25fr;gap:44px;align-items:start}
+.premium-footer a{color:#edf5fa;text-decoration:none}
+.premium-footer h3{color:#fff;font-size:1.35rem;margin:0 0 22px}
+.premium-footer p{color:#c8d7e2;font-size:1rem;line-height:1.65;margin:0 0 22px}
+.footer-logo-wrap{display:inline-flex;background:#fff;border-radius:12px;padding:10px 14px;margin-bottom:22px;box-shadow:0 4px 14px rgba(0,0,0,.12)}
+.footer-logo-wrap img{display:block;width:235px;height:auto}
+.footer-linkedin{display:inline-flex;align-items:center;gap:12px;font-size:1rem;font-weight:650}
+.footer-linkedin span{display:grid;place-items:center;width:34px;height:34px;border-radius:5px;background:#1684d8;color:#fff;font-weight:900;font-size:22px}
+.footer-linkedin b{color:#18c7d0;font-size:1.45rem;margin-left:2px}
+.footer-email-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#fff;color:#082a46!important;border-radius:999px;padding:14px 22px;font-weight:850;font-size:1rem;margin:4px 0 18px}
+.premium-footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid rgba(116,176,211,.35);padding-top:22px;margin-top:55px;color:#c8d7e2;font-size:.9rem}
+.premium-footer-bottom a{color:#18c7d0}
+@media(max-width:900px){
+ .premium-footer{padding:48px 0 22px}
+ .premium-footer-grid{grid-template-columns:1fr 1fr;gap:34px 24px}
+ .premium-footer-brand{grid-column:1/-1}
+ .footer-logo-wrap img{width:205px}
+}
+@media(max-width:600px){
+ .premium-footer-grid{grid-template-columns:1fr;gap:28px}
+ .premium-footer-brand{grid-column:auto}
+ .premium-footer h3{margin-bottom:10px}
+ .premium-footer p{margin-bottom:15px}
+ .premium-footer-bottom{margin-top:32px;display:flex;flex-direction:column;align-items:flex-start;gap:7px;font-size:.78rem}
+}
