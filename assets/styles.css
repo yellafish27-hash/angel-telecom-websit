@@ -625,3 +625,14 @@
  .refurbished-strip h2{font-size:2.35rem}
  .refurbished-hero + .section .card{min-height:0}
 }
+
+
+/* Games console repair grid */
+.console-repairs{padding-top:10px}
+.console-repairs .section-head{margin-bottom:35px}
+.console-fault-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.console-fault-grid .card{min-height:165px}
+.console-fault-grid h3{font-size:1.25rem;margin-bottom:10px}
+.console-fault-grid p{color:var(--muted);line-height:1.55}
+@media(max-width:900px){.console-fault-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.console-fault-grid{grid-template-columns:1fr}.console-fault-grid .card{min-height:0}}
