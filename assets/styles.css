@@ -1096,3 +1096,24 @@
   .business-size-card p{font-size:.8rem}
   .business-size-card b{font-size:.68rem}
 }
+
+
+/* Compact current-offer cards on mobile — wider, shallower button-like options */
+@media(max-width:600px){
+  .offers-section{padding-left:10px;padding-right:10px}
+  .offer-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .offer-card{padding:13px 14px 12px;border-radius:15px;min-height:0}
+  .offer-icon{height:42px;margin-bottom:2px}
+  .offer-icon svg{width:38px;height:38px}
+  .offer-card h3{font-size:.92rem;line-height:1.15;margin:3px 0 4px}
+  .offer-card p{font-size:.72rem;line-height:1.32;min-height:38px;margin:0 0 7px}
+  .offer-card b{font-size:.69rem;line-height:1.15}
+}
+@media(max-width:480px){
+  .offer-card{padding:12px 13px 11px}
+  .offer-icon{height:38px}
+  .offer-icon svg{width:35px;height:35px}
+  .offer-card h3{font-size:.88rem}
+  .offer-card p{font-size:.7rem;min-height:35px}
+  .offer-card b{font-size:.67rem}
+}
