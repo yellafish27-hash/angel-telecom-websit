@@ -875,3 +875,10 @@
   .iphone-launch-copy p{font-size:13px}
   .iphone-launch-panel{padding:25px 22px;border-radius:17px}
 }
+
+/* Homepage hero image temporarily removed — let the founder section sit immediately below the opening message. */
+.design-hero{display:block;min-height:0;background:linear-gradient(135deg,#f5fbfc 0%,#edf8f8 100%)}
+.design-hero .hero-copy{max-width:980px;margin:0 auto;padding:64px 42px 52px}
+@media(max-width:760px){
+  .design-hero .hero-copy{max-width:none;padding:32px 22px 30px}
+}
