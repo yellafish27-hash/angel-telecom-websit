@@ -982,3 +982,13 @@
 .bill-upload-bottom{background:#0b3158!important;border-color:#0b3158!important}
 .bill-upload-bottom h2,.bill-upload-bottom p{color:#fff!important}
 .bill-upload-bottom .design-eyebrow{color:#63d3d1!important}
+
+/* Free business mobile bill review — blue section to match the homepage blue / white / blue rhythm */
+.bill-review-section{background:linear-gradient(135deg,#0b3158 0%,#0871ca 100%);}
+.bill-review-eyebrow{color:#55d1d0;}
+.bill-review-copy h2{color:#fff;}
+.bill-review-lead,.bill-review-copy>p:not(.bill-review-lead){color:#e4f1f7;}
+.bill-review-lead strong{color:#fff;}
+.bill-review-copy small{color:#c8dce8;}
+.bill-review-card{background:#fff;border-color:#fff;}
+.bill-review-card-main{border-color:#bde5e1;}
