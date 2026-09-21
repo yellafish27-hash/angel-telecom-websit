@@ -997,3 +997,5 @@
 .services-section{background:linear-gradient(135deg,#0b3158 0%,#0871ca 100%);}
 .services-section .section-heading-row h2{color:#fff;}
 .services-section .section-heading-row a{color:#55d1d0;}
+
+@media(max-width:600px){.solutions-business + .cta{padding-top:18px;padding-bottom:18px}.solutions-business + .cta .cta-box{padding:24px 22px;border-radius:22px;gap:16px}.solutions-business + .cta .cta-box h2{font-size:2rem;line-height:1.15;margin-bottom:8px}.solutions-business + .cta .cta-box p{font-size:1rem;line-height:1.45;margin-bottom:16px}.solutions-business + .cta .cta-box .btn{display:inline-flex;width:auto;min-height:48px;padding:12px 20px}}
