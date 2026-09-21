@@ -1059,3 +1059,23 @@
   .hero-visual{min-height:360px}
   .cta-box{padding:23px 20px}
 }
+
+
+/* Refine THE RIGHT LEVEL OF SUPPORT cards */
+.business-size-home .grid-3{gap:16px}
+.business-size-card{padding:23px 24px 21px}
+.business-size-card .icon{width:40px;height:40px;border-radius:11px;margin-bottom:13px;font-size:.92rem}
+.business-size-card h3{font-size:1.15rem;margin-bottom:6px}
+.business-size-card p{font-size:.94rem;line-height:1.5}
+.business-size-card b{margin-top:11px;font-size:.8rem}
+@media(max-width:760px){
+  .business-size-home .grid-3{gap:10px}
+  .business-size-card{padding:19px 18px 18px;border-radius:18px}
+  .business-size-card .icon{width:36px;height:36px;border-radius:10px;margin-bottom:10px;font-size:.82rem}
+  .business-size-card h3{font-size:1.08rem;margin-bottom:5px}
+  .business-size-card p{font-size:.9rem;line-height:1.45}
+  .business-size-card b{margin-top:9px;font-size:.76rem}
+}
+@media(max-width:480px){
+  .business-size-card{padding:18px 17px 17px}
+}
