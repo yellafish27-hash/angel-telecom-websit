@@ -1492,3 +1492,13 @@
 @media(max-width:760px){
   .hero-with-stuart{display:block}
 }
+
+
+/* Desktop: match the opening columns to the equal iPhone panels below */
+@media(min-width:761px){
+  .hero-with-stuart{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+  .hero-with-stuart .design-hero,.hero-with-stuart .stuart-band{min-width:0}
+  .hero-with-stuart .stuart-band{padding:28px 30px}
+  .hero-with-stuart .stuart-photo{height:220px}
+  .hero-with-stuart .stuart-photo img{object-fit:cover;object-position:center 45%}
+}
