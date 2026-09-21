@@ -807,3 +807,9 @@
 /* Final footer logo sizing — use the crisp primary logo without enlarging its raster source */
 .footer-site-logo img{width:280px!important;max-width:100%;height:auto;display:block}
 @media(max-width:760px){.footer-site-logo img{width:210px!important;max-width:100%}}
+
+
+/* Footer logo correction: preserve the crisp header-logo appearance on a white surface */
+.footer-site-logo{display:inline-flex!important;align-items:center!important;background:#fff!important;border-radius:10px!important;padding:8px 12px!important;width:auto!important;max-width:100%!important;margin:0 0 24px!important;box-shadow:none!important}
+.footer-site-logo img{display:block!important;width:190px!important;max-width:100%!important;height:auto!important}
+@media(max-width:760px){.footer-site-logo{padding:7px 10px!important}.footer-site-logo img{width:190px!important}}
