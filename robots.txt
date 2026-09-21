@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.angel-telecom.co.uk/sitemap.xml
+
+Sitemap: https://angel-telecom.co.uk/sitemap.xml
