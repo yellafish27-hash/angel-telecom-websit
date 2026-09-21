@@ -906,3 +906,16 @@
 
 /* Keep the connection range on one line in the homepage size cards. */
 .business-size-card .icon{white-space:nowrap;display:inline-flex;align-items:center}
+
+/* Persistent mobile navigation below the header */
+@media(max-width:760px){
+  .site-header{height:auto;position:sticky;top:0}
+  .header-inner{height:76px;width:100%;padding:0 18px;gap:12px}
+  .site-logo img{width:210px}
+  .header-tag,.header-quote{display:none}
+  .mobile-menu{display:none}
+  .mobile-nav{display:grid;grid-template-columns:1fr 1fr;background:#fff;border-top:1px solid #e4ebf0;border-bottom:1px solid #dfe7ed}
+  .mobile-nav a{display:flex;align-items:center;min-height:48px;padding:0 18px;border-bottom:1px solid #e4ebf0;color:#0b3158;font-size:13px;font-weight:800;text-decoration:none}
+  .mobile-nav a:nth-child(odd){border-right:1px solid #e4ebf0}
+  .mobile-nav a:nth-last-child(-n+2){border-bottom:0}
+}
