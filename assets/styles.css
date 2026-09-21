@@ -1459,3 +1459,13 @@
   .premium-footer{padding:22px 0 10px!important}
   .premium-footer-bottom{margin-top:15px!important}
 }
+
+
+/* Desktop: equalise the two iPhone launch panels */
+@media(min-width:761px){
+  .iphone-launch-wrap{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(320px,.95fr);align-items:stretch}
+  .iphone-launch-copy,.iphone-launch-panel{height:100%;box-sizing:border-box}
+  .iphone-launch-copy{display:flex;flex-direction:column;justify-content:center}
+  .iphone-launch-panel{display:flex;flex-direction:column;justify-content:center}
+  .iphone-launch-panel a{margin-top:auto}
+}
