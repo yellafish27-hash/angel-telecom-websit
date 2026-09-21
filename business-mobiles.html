@@ -1,6 +1,26 @@
 <!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Independent business mobile contracts, SIMs and devices for UK businesses — from one connection to hundreds, with direct support from Angel Telecom."><title>Business Mobile Contracts | Angel Telecom</title><link rel="stylesheet" href="assets/styles.css">
-<link rel="canonical" href="https://angel-telecom.co.uk/business-mobiles.html"></head><body><header class="topbar"><div class="container"><span>Angel Telecom · Business Mobile &amp; Technology Solutions</span><span class="topbar-actions"><a href="contact.html">Email us</a></span></div></header>
-<nav class="nav"><div class="container nav-inner"><a class="brand brand-logo" href="index.html"><img class="logo-img" src="assets/angel-logo-clean.png" alt="Angel Telecom — Business Mobile &amp; Technology Solutions"></a><div class="nav-links"><a href="business-mobiles.html">Business Mobiles</a><a href="sim-only.html">SIM Only</a><a href="devices-upgrades.html">Devices</a><a href="refurbished.html">Refurbished</a><a href="repairs.html">Repairs</a><a href="business-solutions.html">Solutions</a><a href="about.html">About</a><a href="contact.html" class="nav-cta">Get a quote</a></div></div></nav><main>
+<link rel="canonical" href="https://angel-telecom.co.uk/business-mobiles.html"></head><body><header class="site-header">
+  <div class="header-inner">
+    <a class="site-logo" href="index.html"><img src="assets/angel-logo-clean.png" alt="Angel Telecom — Business Mobile & Technology Solutions"></a>
+    <div class="header-tag">Independent advice. Real support.</div>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="business-mobiles.html">Business Mobiles</a>
+      <a href="sim-only.html">SIM Only</a>
+      <a href="devices-upgrades.html">Devices</a>
+      <a href="repairs.html">Repairs</a>
+      <a href="refurbished.html">Refurbished</a>
+      <a href="business-solutions.html">Business Solutions</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="header-quote" href="contact.html">Get a quote <span>→</span></a>
+    <button class="mobile-menu" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+  <div class="mobile-nav" aria-hidden="true">
+    <a href="business-mobiles.html">Business Mobiles</a><a href="sim-only.html">SIM Only</a><a href="devices-upgrades.html">Devices</a><a href="repairs.html">Repairs</a><a href="refurbished.html">Refurbished</a><a href="business-solutions.html">Business Solutions</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </div>
+</header><main>
 <section class="page-hero business-mobile-hero"><div class="container"><a class="home-back" href="index.html" aria-label="Back to Angel Telecom home">← Home</a><div class="eyebrow">BUSINESS MOBILE CONTRACTS</div><h1>Business mobiles, without the hassle.</h1><p>Whether you need one connection or a complete fleet, Stuart and the Angel Telecom team help you choose the right tariffs, devices and network options for your business — with straightforward advice and ongoing support from an owner-led business.</p><div class="actions"><a class="btn btn-primary" href="contact.html">Get a business quote <span>→</span></a><a class="btn btn-secondary" href="#bill-review">Review my current setup</a></div><div class="hero-trust-row"><span>✓ All major networks</span><span>✓ Independent advice</span><span>✓ One point of contact</span></div></div></section>
 
 <section class="section"><div class="container"><div class="section-head"><div><div class="eyebrow">WHAT WE CAN HELP WITH</div><h2>A mobile setup built around your business.</h2></div><p>From a single connection to hundreds, we can help you choose what works for your people, your budget and the way your business actually operates.</p></div><div class="grid-3"><div class="card"><div class="icon">01</div><h3>Business mobile contracts</h3><p>Business tariffs with the latest smartphones, flexible allowances and options to suit different users.</p></div><div class="card"><div class="icon">02</div><h3>SIM Only</h3><p>Keep suitable handsets and choose business SIMs with allowances that match how your team actually uses them.</p></div><div class="card"><div class="icon">03</div><h3>Upgrades &amp; renewals</h3><p>Coming to the end of your contracts? We'll help you review the options rather than simply renewing what you already have.</p></div></div></div></section>
@@ -24,4 +44,7 @@
     <div class="premium-footer-section"><h3 tabindex="0">Contact</h3><p>Bradford, West Yorkshire</p><a class="footer-email-button" href="contact.html">✉ &nbsp; Email us</a><p><a href="contact.html">stuart.hudson@angel-telecom.co.uk</a></p></div>
   </div>
   <div class="container premium-footer-bottom"><span>© <span data-year></span> Angel Telecom Limited. All rights reserved.</span><a href="privacy.html">Privacy</a></div>
-</footer><script src="assets/site.js"></script></body></html>
+</footer><script src="assets/site.js"></script><script>
+const menu=document.querySelector('.mobile-menu'); const nav=document.querySelector('.mobile-nav');
+menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')==='true';menu.setAttribute('aria-expanded',String(!open));nav.classList.toggle('open',!open);nav.setAttribute('aria-hidden',String(open));});
+</script></body></html>
