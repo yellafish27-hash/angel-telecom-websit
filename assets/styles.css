@@ -842,3 +842,8 @@
 .business-size-card h3{color:var(--navy)}
 .business-size-card p{color:var(--muted)}
 .business-size-card b{display:block;margin-top:14px;color:var(--blue);font-size:.85rem}
+
+/* Final site-wide footer logo treatment — match the approved homepage footer. */
+.footer-site-logo{display:inline-flex!important;align-items:center!important;width:auto!important;max-width:100%!important;margin:0 0 24px!important;padding:8px 12px!important;background:#fff!important;border-radius:10px!important;line-height:0!important;text-decoration:none!important;box-shadow:none!important}
+.footer-site-logo img{display:block!important;width:190px!important;max-width:100%!important;height:auto!important}
+@media(max-width:760px){.footer-site-logo{padding:7px 10px!important;margin-bottom:22px!important}.footer-site-logo img{width:190px!important;max-width:100%!important}}
