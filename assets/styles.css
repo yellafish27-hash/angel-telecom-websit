@@ -813,3 +813,9 @@
 .footer-site-logo{display:inline-flex!important;align-items:center!important;background:#fff!important;border-radius:10px!important;padding:8px 12px!important;width:auto!important;max-width:100%!important;margin:0 0 24px!important;box-shadow:none!important}
 .footer-site-logo img{display:block!important;width:190px!important;max-width:100%!important;height:auto!important}
 @media(max-width:760px){.footer-site-logo{padding:7px 10px!important}.footer-site-logo img{width:190px!important}}
+
+
+/* Final footer logo fix: use the high-resolution dark-background master logo. */
+.footer-site-logo{display:block!important;width:330px!important;max-width:100%!important;margin:0 0 28px!important;padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important}
+.footer-site-logo img{display:block!important;width:100%!important;height:auto!important;max-width:100%!important}
+@media(max-width:760px){.footer-site-logo{width:270px!important;margin-bottom:22px!important}}
