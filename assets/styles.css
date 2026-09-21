@@ -895,3 +895,11 @@
   .bill-review-button strong{font-size:12px}
   .bill-review-button span{font-size:9.5px}
 }
+
+/* Alternate homepage section: Why Angel Telecom */
+.home-intro-blue{background:#0b3158!important;color:#fff}
+.home-intro-blue .design-eyebrow{color:#63d3d1}
+.home-intro-blue h2,.home-intro-blue p{color:#fff}
+.home-intro-blue p{opacity:.9}
+.home-intro-blue .outline-button{background:transparent;color:#fff;border-color:#fff}
+.home-intro-blue .blue-button{background:#1684d8}
