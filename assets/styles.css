@@ -1312,3 +1312,59 @@
   .business-size-home,.offers-section,.services-section,.centres-section{padding-left:3%;padding-right:3%}
   .service-cards{grid-template-columns:repeat(3,1fr)}
 }
+
+
+/* Desktop visual rhythm pass — tighter without changing content or mobile */
+@media(min-width:1201px){
+  .design-hero{min-height:395px}
+  .design-hero .hero-copy{padding-top:44px;padding-bottom:40px}
+  .stuart-band{min-height:145px;grid-template-columns:165px 1.45fr 1fr 225px;gap:24px}
+  .stuart-photo{height:145px}
+  .stuart-quote p{font-size:13px}
+  .stuart-points{font-size:11px;gap:6px}
+  .iphone-launch-section{padding:28px 0}
+  .iphone-launch-wrap{gap:22px}
+  .iphone-launch-copy{padding:28px 32px}
+  .iphone-launch-copy h2{font-size:38px;margin-bottom:10px}
+  .iphone-launch-copy p{font-size:14px;line-height:1.45}
+  .iphone-launch-panel{padding:27px}
+  .iphone-launch-panel h3{font-size:23px}
+
+  .lifecycle-strip{padding:19px 4% 21px}
+  .section-title-centre h2{font-size:24px}
+  .section-title-centre p{font-size:11.5px;margin-bottom:13px}
+  .lifecycle-items i{width:46px;height:46px;font-size:21px}
+  .lifecycle-items b{font-size:12.5px}
+  .lifecycle-items span{font-size:9.5px}
+  .lifecycle-items em{font-size:27px}
+
+  .home-intro.home-intro-blue{padding:45px 0!important}
+  .home-intro.home-intro-blue .section-title-centre h2{font-size:29px}
+  .home-intro.home-intro-blue .section-title-centre p{max-width:760px;font-size:13px;line-height:1.45}
+  .home-intro.home-intro-blue .hero-buttons{margin-top:15px}
+
+  .business-size-home{padding:48px 0 52px!important}
+  .business-size-home .section-head{margin-bottom:18px}
+  .business-size-card{padding:18px 20px 16px}
+  .business-size-card .icon{width:34px;height:34px;margin-bottom:8px}
+  .business-size-card h3{font-size:1.05rem;margin-bottom:4px}
+  .business-size-card p{font-size:.82rem}
+  .business-size-card b{font-size:.72rem;margin-top:7px}
+
+  .bill-review-section{padding:48px 4%!important}
+  .bill-review-wrap{min-height:0}
+
+  .offers-section{padding:42px 4% 44px}
+  .offers-heading{margin-bottom:18px}
+  .offer-card{padding:15px 16px 13px}
+  .offer-icon{height:48px}
+  .offer-icon svg{width:40px;height:40px}
+  .offer-card p{min-height:38px}
+  .offers-note{padding:12px 16px;margin-top:10px}
+
+  .services-section,.centres-section{padding:42px 4% 46px}
+  .services-section .section-heading-row,.centres-section .section-heading-row{margin-bottom:14px}
+  .service-card img{height:124px}
+  .service-card div{padding:13px 15px 14px}
+  .centre-card img{height:142px}
+}
