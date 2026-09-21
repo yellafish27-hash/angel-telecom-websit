@@ -970,3 +970,15 @@
 @media(max-width:760px){
   .home-back{margin-bottom:14px;font-size:12px}
 }
+
+
+/* Bill review page — blue/white/blue section order */
+.bill-upload-hero{background:#0b3158!important;color:#fff!important}
+.bill-upload-hero:after{background:rgba(99,211,209,.10)!important}
+.bill-upload-copy h1{color:#fff!important}
+.bill-upload-copy>p{color:#dcecf5!important}
+.bill-upload-trust{color:#d7e9f2!important}
+.bill-upload-how{background:#fff!important}
+.bill-upload-bottom{background:#0b3158!important;border-color:#0b3158!important}
+.bill-upload-bottom h2,.bill-upload-bottom p{color:#fff!important}
+.bill-upload-bottom .design-eyebrow{color:#63d3d1!important}
