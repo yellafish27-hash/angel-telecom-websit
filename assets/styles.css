@@ -1368,3 +1368,22 @@
   .service-card div{padding:13px 15px 14px}
   .centre-card img{height:142px}
 }
+
+
+/* Desktop section-height harmonisation — make homepage bands feel like one system */
+@media(min-width:1201px){
+  .design-hero{min-height:390px}
+  .stuart-band{min-height:138px}
+  .iphone-launch-section{min-height:300px;display:flex;align-items:center}
+  .iphone-launch-wrap{width:100%}
+  .lifecycle-strip{min-height:175px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center}
+  .home-intro.home-intro-blue{min-height:235px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center}
+  .business-size-home{min-height:315px;box-sizing:border-box;display:flex;align-items:center}
+  .business-size-home>.container{width:100%}
+  .bill-review-section{min-height:390px;box-sizing:border-box;display:flex;align-items:center}
+  .bill-review-wrap{width:100%}
+  .offers-section{min-height:345px;box-sizing:border-box;display:flex;align-items:center}
+  .offers-wrap{width:100%}
+  .services-section{min-height:405px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center}
+  .centres-section{min-height:335px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center}
+}
