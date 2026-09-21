@@ -1469,3 +1469,9 @@
   .iphone-launch-panel{display:flex;flex-direction:column;justify-content:center}
   .iphone-launch-panel a{margin-top:auto}
 }
+
+
+/* Desktop: equalise iPhone launch panel widths as well as height */
+@media(min-width:761px){
+  .iphone-launch-wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
