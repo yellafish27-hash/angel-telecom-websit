@@ -1117,3 +1117,94 @@
   .offer-card p{font-size:.7rem;min-height:35px}
   .offer-card b{font-size:.67rem}
 }
+
+
+/* Desktop refinement pass — keep the approved mobile design unchanged */
+@media(min-width:761px){
+  /* Hero: use the desktop canvas more deliberately without bringing back a large hero photo. */
+  .design-hero{
+    max-width:1440px;
+    min-height:500px;
+    grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);
+    background:
+      radial-gradient(circle at 86% 38%,rgba(0,167,160,.13),transparent 24%),
+      linear-gradient(105deg,#f4fafc 0%,#edf8f8 54%,#fff 54%,#fff 100%);
+    border-radius:0 0 2px 2px;
+  }
+  .hero-copy{
+    max-width:760px;
+    padding:62px 52px 56px 64px;
+    justify-content:center;
+  }
+  .design-eyebrow{font-size:13px;margin-bottom:13px}
+  .hero-copy h1{font-size:clamp(58px,5.1vw,74px);line-height:.9;max-width:700px}
+  .hero-copy h2{font-size:27px;margin:14px 0 13px}
+  .hero-copy p{font-size:16px;line-height:1.5;max-width:650px}
+  .hero-buttons{margin-top:21px;gap:12px;align-items:stretch}
+  .blue-button,.outline-button{min-height:48px;padding:12px 22px;font-size:13px}
+  .bill-review-button{min-width:230px;min-height:48px}
+  .hero-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:18px;max-width:700px}
+  .hero-options a{min-height:72px;padding:12px 15px;border-radius:14px}
+  .hero-options strong{font-size:17px}
+  .hero-options span{font-size:10px}
+  .hero-options b{font-size:11px;margin-top:5px}
+
+  /* Stuart strip: give the founder section a little more presence and structure. */
+  .stuart-band{min-height:170px;grid-template-columns:190px 1.45fr 1fr 250px;gap:28px;padding:0 4%}
+  .stuart-photo{height:170px}
+  .stuart-quote p{font-size:14px}
+  .stuart-points{font-size:12px}
+
+  /* Sections: tighter desktop rhythm and stronger headings. */
+  .business-size-home{padding-top:64px;padding-bottom:64px}
+  .business-size-home .section-head{max-width:1120px;margin:0 auto 26px;align-items:end}
+  .business-size-home .section-head p{font-size:.93rem;line-height:1.5}
+  .business-size-home .grid-3{gap:14px;max-width:1120px;margin:auto}
+  .business-size-card{padding:22px 23px 20px;border-radius:18px;min-height:0}
+  .business-size-card .icon{width:38px;height:38px;border-radius:10px;margin-bottom:11px}
+  .business-size-card h3{font-size:1.16rem}
+  .business-size-card p{font-size:.9rem;line-height:1.45}
+  .business-size-card b{font-size:.78rem;margin-top:10px}
+
+  /* Current offers: compact, wider cards rather than tall content blocks. */
+  .offers-section{padding:54px 4% 58px}
+  .offers-wrap{max-width:1180px}
+  .offers-heading{grid-template-columns:1fr 1fr;gap:55px;margin-bottom:25px}
+  .offers-heading h2{font-size:clamp(2.35rem,3.2vw,3.15rem)}
+  .offers-heading>p{font-size:.95rem}
+  .offer-cards{gap:12px}
+  .offer-card{padding:18px 19px 16px;border-radius:17px;min-height:0}
+  .offer-icon{height:58px}
+  .offer-icon svg{width:45px;height:45px}
+  .offer-card h3{font-size:1.02rem;line-height:1.15}
+  .offer-card p{font-size:.8rem;line-height:1.4;min-height:44px}
+  .offer-card b{font-size:.77rem}
+  .offers-note{padding:14px 18px;margin-top:12px}
+
+  /* Services: six tiny cards become a clean three-column grid on desktop. */
+  .services-section{padding:58px 4% 64px}
+  .services-section .section-heading-row{max-width:1180px;margin:0 auto 20px}
+  .services-section .section-heading-row h2{font-size:clamp(2rem,3.2vw,2.7rem)}
+  .service-cards{grid-template-columns:repeat(3,1fr);gap:16px;max-width:1180px}
+  .service-card{border-radius:17px;box-shadow:0 5px 18px rgba(8,42,70,.06)}
+  .service-card img{height:145px}
+  .service-card div{padding:15px 17px 17px}
+  .service-card h3{font-size:1rem;line-height:1.15;margin-bottom:6px}
+  .service-card p{font-size:.8rem;line-height:1.4;min-height:43px;margin-bottom:8px}
+  .service-card b{font-size:.78rem}
+
+  /* Service centres: slightly larger imagery and cleaner cards. */
+  .centres-section{padding:58px 4% 64px}
+  .centres-section .section-heading-row{max-width:1180px;margin:0 auto 20px}
+  .centres-section .section-heading-row h2{font-size:clamp(2rem,3.2vw,2.7rem)}
+  .centre-cards{gap:14px;max-width:1180px}
+  .centre-card{border-radius:17px;box-shadow:0 5px 18px rgba(8,42,70,.06)}
+  .centre-card img{height:170px}
+  .centre-card h3{font-size:1.05rem;margin:12px 15px 3px}
+  .centre-card p{font-size:.78rem;margin:0 15px 8px}
+  .centre-links{padding:0 15px 14px}
+  .centre-card b,.google-link{font-size:.76rem}
+
+  /* Keep the page footer transition clean and intentional. */
+  .premium-footer{margin-top:0}
+}
