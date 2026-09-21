@@ -1208,3 +1208,18 @@
   /* Keep the page footer transition clean and intentional. */
   .premium-footer{margin-top:0}
 }
+
+
+/* Desktop footer compact pass — restore a concise, single-row footer */
+@media(min-width:901px){
+  .premium-footer{padding:30px 0 14px}
+  .premium-footer-grid{grid-template-columns:1.55fr 1fr 1.15fr 1.05fr;gap:32px;align-items:start}
+  .premium-footer-brand{grid-column:auto!important;width:auto!important;padding:0!important}
+  .premium-footer h3{font-size:1.05rem;margin:0 0 10px}
+  .premium-footer p{font-size:.84rem;line-height:1.45;margin:0 0 10px}
+  .footer-linkedin{font-size:.84rem;gap:9px}
+  .footer-linkedin span{width:34px;height:34px;font-size:20px}
+  .footer-linkedin b{font-size:1.25rem}
+  .footer-email-button{font-size:.84rem;padding:10px 17px;margin:1px 0 8px}
+  .premium-footer-bottom{margin-top:22px;padding-top:10px;font-size:.74rem}
+}
