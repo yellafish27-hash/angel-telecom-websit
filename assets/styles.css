@@ -951,3 +951,22 @@
     padding:9px 11px;
   }
 }
+
+
+/* Clear home navigation on interior pages */
+.home-back{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  margin-bottom:18px;
+  color:#0871ca;
+  font-size:13px;
+  font-weight:800;
+  text-decoration:none;
+  transition:gap .18s ease,color .18s ease;
+}
+.home-back:hover{gap:10px;color:#0b3158}
+.page-hero .home-back{position:relative;z-index:2}
+@media(max-width:760px){
+  .home-back{margin-bottom:14px;font-size:12px}
+}
