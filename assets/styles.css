@@ -882,3 +882,16 @@
 @media(max-width:760px){
   .design-hero .hero-copy{max-width:none;padding:32px 22px 30px}
 }
+
+/* Free bill review — prominent third homepage action. */
+.bill-review-button{display:flex;flex-direction:column;justify-content:center;gap:3px;min-width:210px;padding:10px 17px;border:1.5px solid #11a9a2;border-radius:14px;background:#effafa;color:#0b3158;text-decoration:none;line-height:1.15;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.bill-review-button:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(8,42,70,.08);border-color:#0871ca}
+.bill-review-button strong{font-size:13px;color:#0871ca}
+.bill-review-button span{font-size:10px;color:#536577}
+@media(max-width:760px){
+  .hero-buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .hero-buttons .blue-button,.hero-buttons .outline-button{min-height:44px;padding:10px 12px}
+  .bill-review-button{grid-column:1/-1;min-height:54px;padding:9px 13px;border-radius:12px}
+  .bill-review-button strong{font-size:12px}
+  .bill-review-button span{font-size:9.5px}
+}
