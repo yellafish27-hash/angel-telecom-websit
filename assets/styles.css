@@ -847,3 +847,8 @@
 .footer-site-logo{display:inline-flex!important;align-items:center!important;width:auto!important;max-width:100%!important;margin:0 0 24px!important;padding:8px 12px!important;background:#fff!important;border-radius:10px!important;line-height:0!important;text-decoration:none!important;box-shadow:none!important}
 .footer-site-logo img{display:block!important;width:190px!important;max-width:100%!important;height:auto!important}
 @media(max-width:760px){.footer-site-logo{padding:7px 10px!important;margin-bottom:22px!important}.footer-site-logo img{width:190px!important;max-width:100%!important}}
+
+/* Approved footer master logo — final treatment. */
+.footer-site-logo{display:block!important;width:330px!important;max-width:100%!important;margin:0 0 28px!important;padding:0!important;background:transparent!important;border:0!important;border-radius:0!important;line-height:0!important;box-shadow:none!important}
+.footer-site-logo img{display:block!important;width:100%!important;max-width:100%!important;height:auto!important}
+@media(max-width:760px){.footer-site-logo{width:270px!important;margin-bottom:22px!important;padding:0!important}.footer-site-logo img{width:100%!important;max-width:100%!important}}
