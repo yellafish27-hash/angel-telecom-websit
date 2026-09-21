@@ -709,8 +709,8 @@
 .premium-footer{background:linear-gradient(135deg,#061d31 0%,#062b4a 55%,#061d31 100%);color:#fff;padding:56px 0 48px;overflow:hidden}
 .premium-footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 64px;align-items:start}
 .premium-footer-brand{grid-column:1/-1;padding-bottom:68px}
-.footer-site-logo{display:block;width:max-content;max-width:100%;margin:0 0 28px;text-decoration:none}
-.footer-site-logo img{display:block;width:520px;max-width:100%;height:auto}
+.footer-site-logo{display:block!important;width:330px!important;max-width:100%!important;margin:0 0 28px!important;padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important;text-decoration:none!important}
+.footer-site-logo img{display:block!important;width:100%!important;height:auto!important;max-width:100%!important}
 .premium-footer-brand p{font-size:1.55rem;line-height:1.55;max-width:850px;color:#f3f7fa;margin:0 0 34px}
 .footer-linkedin{display:inline-flex;align-items:center;gap:20px;color:#fff!important;font-size:1.45rem;font-weight:500}
 .footer-linkedin span{width:64px;height:64px;border-radius:6px;font-size:38px;background:#1684d8}
