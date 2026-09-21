@@ -1,6 +1,26 @@
 <!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Contact Angel Telecom for business mobile contracts, SIM only, devices, repairs, refurbishment and business technology support."><title>Contact Angel Telecom | Email us</title><link rel="stylesheet" href="assets/styles.css">
-<link rel="canonical" href="https://angel-telecom.co.uk/contact.html"></head><body><header class="topbar"><div class="container"><span>Angel Telecom · Business Mobile &amp; Technology Solutions</span><span class="topbar-actions"><a href="#enquiry">Email us</a></span></div></header>
-<nav class="nav"><div class="container nav-inner"><a class="brand brand-logo" href="index.html"><img class="logo-img" src="assets/angel-logo-clean.png" alt="Angel Telecom — Business Mobile &amp; Technology Solutions"></a><div class="nav-links"><a href="business-mobiles.html">Business Mobiles</a><a href="sim-only.html">SIM Only</a><a href="devices-upgrades.html">Devices</a><a href="refurbished.html">Refurbished</a><a href="repairs.html">Repairs</a><a href="business-solutions.html">Solutions</a><a href="about.html">About</a><a href="contact.html" class="nav-cta">Get a quote</a></div></div></nav><main>
+<link rel="canonical" href="https://angel-telecom.co.uk/contact.html"></head><body><header class="site-header">
+  <div class="header-inner">
+    <a class="site-logo" href="index.html"><img src="assets/angel-logo-clean.png" alt="Angel Telecom — Business Mobile & Technology Solutions"></a>
+    <div class="header-tag">Independent advice. Real support.</div>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="business-mobiles.html">Business Mobiles</a>
+      <a href="sim-only.html">SIM Only</a>
+      <a href="devices-upgrades.html">Devices</a>
+      <a href="repairs.html">Repairs</a>
+      <a href="refurbished.html">Refurbished</a>
+      <a href="business-solutions.html">Business Solutions</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="header-quote" href="contact.html">Get a quote <span>→</span></a>
+    <button class="mobile-menu" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+  <div class="mobile-nav" aria-hidden="true">
+    <a href="business-mobiles.html">Business Mobiles</a><a href="sim-only.html">SIM Only</a><a href="devices-upgrades.html">Devices</a><a href="repairs.html">Repairs</a><a href="refurbished.html">Refurbished</a><a href="business-solutions.html">Business Solutions</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </div>
+</header><main>
 <section class="page-hero contact-hero"><div class="container"><a class="home-back" href="index.html" aria-label="Back to Angel Telecom home">← Home</a><div class="eyebrow">GET IN TOUCH</div><h1>Let’s talk business technology.</h1><p>Tell us what you need — from one business mobile to a larger device estate, a repair requirement or a question about refurbished technology.</p><div class="actions"><a class="btn btn-primary" href="#enquiry">Email us <span>→</span></a><a class="btn btn-secondary" href="about.html">Meet Angel Telecom</a></div></div></section>
 <section class="section"><div class="container contact-grid"><div class="contact-card"><h2>Direct contact with Stuart</h2><p><strong>Stuart Hudson</strong><br>Founder &amp; Managing Director, Angel Telecom</p><p><strong>Email</strong><br><span class="email-display">stuart.hudson@angel-telecom.co.uk</span></p><p><strong>LinkedIn</strong><br><a href="https://uk.linkedin.com/in/stuart-hudson-business-mobiles-repairs-refurbished-handsets-a6166917" target="_blank" rel="noopener">Connect with Stuart ↗</a></p><p><strong>Location</strong><br>Bradford, West Yorkshire</p></div><div class="card"><h2>What can we help with?</h2><p>Tell us what you are looking to achieve. We can help with:</p><ul class="list"><li>Business mobile contracts</li><li>SIM-only requirements</li><li>New devices and upgrades</li><li>Business repair support</li><li>Refurbished devices and trade-in</li><li>Wider technology lifecycle requirements</li></ul><div class="actions"><a class="btn btn-primary" href="#enquiry">Email your enquiry</a></div></div></div></section>
 <section class="section contact-form-section" id="enquiry">
@@ -41,4 +61,7 @@
     <div class="premium-footer-section"><h3 tabindex="0">Contact</h3><p>Bradford, West Yorkshire</p><a class="footer-email-button" href="#enquiry">✉ &nbsp; Email us</a><p><a href="#enquiry">stuart.hudson@angel-telecom.co.uk</a></p></div>
   </div>
   <div class="container premium-footer-bottom"><span>© <span data-year></span> Angel Telecom Limited. All rights reserved.</span><a href="privacy.html">Privacy</a></div>
-</footer><script src="assets/site.js"></script></body></html>
+</footer><script src="assets/site.js"></script><script>
+const menu=document.querySelector('.mobile-menu'); const nav=document.querySelector('.mobile-nav');
+menu?.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')==='true';menu.setAttribute('aria-expanded',String(!open));nav.classList.toggle('open',!open);nav.setAttribute('aria-hidden',String(open));});
+</script></body></html>
