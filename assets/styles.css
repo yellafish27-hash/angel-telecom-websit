@@ -802,3 +802,8 @@
 /* Refined offer-card icons */
 .offer-icon{width:52px;height:52px;display:flex;align-items:center;justify-content:center;color:#2f6fc5;margin-bottom:24px}
 .offer-icon svg{width:48px;height:48px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
+
+/* Final footer logo sizing — use the crisp primary logo without enlarging its raster source */
+.footer-site-logo img{width:280px!important;max-width:100%;height:auto;display:block}
+@media(max-width:760px){.footer-site-logo img{width:210px!important;max-width:100%}}
