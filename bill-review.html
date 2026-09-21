@@ -72,7 +72,30 @@
     <div class="section-title-centre">
       <div class="design-eyebrow">HOW IT WORKS</div>
       <h2>Three simple steps.</h2>
-      <p>No forms to fill in and no complicated process.</p>
+      <p>Answer a few quick questions about your current mobile setup, with the option to upload your latest bill if you have it.</p>
+    <form class="angel-form bill-review-form" action="https://formsubmit.co/stuart.hudson@angel-telecom.co.uk" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_subject" value="New Angel Telecom free business mobile review">
+      <input type="hidden" name="_next" value="https://angel-telecom.co.uk/thanks.html">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_url" value="https://angel-telecom.co.uk/bill-review.html">
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none">
+      <div class="form-grid">
+        <label>Full name<input type="text" name="name" autocomplete="name" required></label>
+        <label>Company name<input type="text" name="company" autocomplete="organization" required></label>
+        <label>Email address<input type="email" name="email" autocomplete="email" required></label>
+        <label>Mobile number<input type="tel" name="mobile" autocomplete="tel" required></label>
+      </div>
+      <div class="form-grid">
+        <label>How many mobile numbers do you have?<select name="mobile_numbers" required><option value="">Please choose…</option><option>1–9</option><option>10–49</option><option>50–99</option><option>100+</option></select></label>
+        <label>How many data-only connections?<select name="data_connections" required><option value="">Please choose…</option><option>None</option><option>1–5</option><option>6–20</option><option>21+</option><option>Not sure</option></select></label>
+        <label>Which network are you with?<select name="network" required><option value="">Please choose…</option><option>EE</option><option>O2</option><option>Vodafone</option><option>Three</option><option>Other</option><option>Not sure</option></select></label>
+        <label>Approximate monthly mobile bill?<select name="monthly_bill" required><option value="">Please choose…</option><option>Under £100</option><option>£100–£249</option><option>£250–£499</option><option>£500–£999</option><option>£1,000+</option><option>Not sure</option></select></label>
+      </div>
+      <label>When does your current contract end?<select name="contract_end" required><option value="">Please choose…</option><option>Within 3 months</option><option>3–6 months</option><option>6–12 months</option><option>More than 12 months</option><option>Not sure</option></select></label>
+      <label>Upload your latest mobile bill <span>(optional)</span><input type="file" name="attachment" accept=".pdf,.jpg,.jpeg,.png"></label>
+      <p class="form-note">A bill is completely optional. If you upload one, it helps us review your current arrangements in more detail. Maximum file size: 10MB.</p>
+      <button class="btn btn-primary" type="submit">Request my free review <span>→</span></button>
+    </form>
     </div>
     <div class="bill-upload-steps">
       <div><span>01</span><h3>Upload your bill</h3><p>Use the secure upload button above. You can do this from your phone or computer.</p></div>
