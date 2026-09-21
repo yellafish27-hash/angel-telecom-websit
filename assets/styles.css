@@ -834,3 +834,11 @@
   .hero-options span{font-size:9px}
   .hero-options b{font-size:8.5px;margin-top:7px;white-space:nowrap}
 }
+
+/* Business size cards — homepage */
+.business-size-home{background:#f7fafc}
+.business-size-card{display:block;text-decoration:none;color:inherit;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.business-size-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(8,42,70,.09);border-color:#a9cfdf}
+.business-size-card h3{color:var(--navy)}
+.business-size-card p{color:var(--muted)}
+.business-size-card b{display:block;margin-top:14px;color:var(--blue);font-size:.85rem}
