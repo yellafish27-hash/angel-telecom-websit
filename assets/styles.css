@@ -999,3 +999,63 @@
 .services-section .section-heading-row a{color:#55d1d0;}
 
 @media(max-width:600px){.solutions-business + .cta{padding-top:18px;padding-bottom:18px}.solutions-business + .cta .cta-box{padding:24px 22px;border-radius:22px;gap:16px}.solutions-business + .cta .cta-box h2{font-size:2rem;line-height:1.15;margin-bottom:8px}.solutions-business + .cta .cta-box p{font-size:1rem;line-height:1.45;margin-bottom:16px}.solutions-business + .cta .cta-box .btn{display:inline-flex;width:auto;min-height:48px;padding:12px 20px}}
+
+/* Final mobile spacing and scale pass */
+@media(max-width:760px){
+  /* Keep mobile pages compact without changing the approved desktop layouts. */
+  .section{padding:52px 0}
+  .section-head{margin-bottom:22px}
+  .section h2{font-size:clamp(1.85rem,8vw,2.55rem);line-height:1.06}
+  .page-hero{padding:48px 0 44px}
+  .page-hero h1{font-size:clamp(2.35rem,10vw,3.35rem);margin-bottom:14px}
+  .page-hero p{font-size:1.02rem;line-height:1.5}
+
+  /* Business Solutions */
+  .solutions-hero{padding:40px 0 44px}
+  .solutions-hero h1{font-size:2.85rem;line-height:1.02}
+
+  /* Contact */
+  .contact-hero{padding:44px 0 46px}
+  .contact-hero h1{font-size:2.85rem;line-height:1.02}
+
+  /* About */
+  .about-page .about-stuart-image{height:360px}
+  .about-page .about-stuart-image img{height:100%;object-fit:cover}
+
+  /* Large visual/hero artwork should support the content rather than dominate it. */
+  .v9-hero-art{min-height:340px}
+  .hero-visual{min-height:410px}
+
+  /* Generic cards and panels: reduce empty space while retaining comfortable tap targets. */
+  .card{padding:23px}
+  .panel,.quote{padding:25px}
+  .contact-card{padding:24px}
+  .quote-card{padding:28px 24px}
+
+  /* Closing CTAs */
+  .cta{padding:42px 0}
+  .cta-box{padding:25px 22px;border-radius:22px;gap:18px}
+  .cta-box h2{font-size:2rem;line-height:1.12}
+  .cta-box p{font-size:1rem;line-height:1.45}
+  .cta-box .actions{margin-top:18px}
+
+  /* Keep the business-size cards and service cards compact on narrow screens. */
+  .business-size-home .grid-3{gap:12px}
+  .business-size-card{padding:22px}
+  .service-grid{gap:11px}
+  .service-card{padding:18px}
+
+  /* Prevent large gaps immediately before the footer. */
+  .premium-footer{margin-top:0}
+}
+
+@media(max-width:480px){
+  .container{width:90%}
+  .design-hero .hero-copy{padding:28px 20px 26px}
+  .hero h1{font-size:2.95rem}
+  .solutions-hero h1,.contact-hero h1{font-size:2.55rem}
+  .about-page .about-stuart-image{height:320px}
+  .v9-hero-art{min-height:300px}
+  .hero-visual{min-height:360px}
+  .cta-box{padding:23px 20px}
+}
