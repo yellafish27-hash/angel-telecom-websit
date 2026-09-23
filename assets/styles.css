@@ -1494,11 +1494,68 @@
 }
 
 
-/* Desktop: match the opening columns to the equal iPhone panels below */
+/* Desktop: full-height Stuart portrait with the copy overlaid, so more of the portrait is visible */
 @media(min-width:761px){
   .hero-with-stuart{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
   .hero-with-stuart .design-hero,.hero-with-stuart .stuart-band{min-width:0}
-  .hero-with-stuart .stuart-band{padding:28px 30px}
-  .hero-with-stuart .stuart-photo{height:220px}
-  .hero-with-stuart .stuart-photo img{object-fit:cover;object-position:center 45%}
+  .hero-with-stuart .stuart-band{
+    position:relative;
+    min-height:0!important;
+    height:100%;
+    padding:0;
+    display:block;
+    overflow:hidden;
+    border-radius:22px;
+    background:#063c73;
+  }
+  .hero-with-stuart .stuart-photo{
+    position:absolute;
+    inset:0;
+    z-index:0;
+    width:100%;
+    height:100%;
+    margin:0;
+    overflow:hidden;
+  }
+  .hero-with-stuart .stuart-photo::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(90deg,rgba(4,55,105,.02) 28%,rgba(4,55,105,.18) 48%,rgba(4,32,66,.88) 100%),
+               linear-gradient(0deg,rgba(3,35,70,.82) 0%,rgba(3,35,70,.08) 52%,rgba(3,35,70,0) 100%);
+  }
+  .hero-with-stuart .stuart-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center center;
+    transform:none;
+  }
+  .hero-with-stuart .stuart-quote{
+    position:absolute;
+    z-index:1;
+    right:30px;
+    bottom:112px;
+    width:46%;
+    max-width:290px;
+  }
+  .hero-with-stuart .stuart-quote p{
+    font-size:15px;
+    line-height:1.42;
+    margin:0 0 10px;
+    text-shadow:0 1px 8px rgba(0,0,0,.18);
+  }
+  .hero-with-stuart .stuart-quote strong{font-size:15px}
+  .hero-with-stuart .stuart-quote span{font-size:11px}
+  .hero-with-stuart .stuart-points{
+    position:absolute;
+    z-index:1;
+    right:30px;
+    bottom:28px;
+    width:46%;
+    max-width:290px;
+    gap:6px;
+    font-size:11px;
+    line-height:1.45;
+  }
 }
