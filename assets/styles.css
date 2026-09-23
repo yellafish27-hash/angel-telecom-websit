@@ -1638,3 +1638,29 @@
   .hero-option-icon{left:9px;top:13px;width:27px;height:27px}
   .hero-option-icon svg{width:27px;height:27px}
 }
+
+/* Refined repair cards and stronger free bill review CTAs */
+.repair-type-card{position:relative;overflow:hidden}
+.repair-icon{width:48px;height:48px;border-radius:14px;background:#eef9f8;color:#0871ca;display:grid;place-items:center;margin-bottom:10px}
+.repair-icon svg{width:30px;height:30px;fill:none;stroke:#0871ca;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.repair-type-card .icon{display:none}
+.hero-bill-review{position:relative;min-width:250px!important;border:2px solid #21a7a2!important;background:linear-gradient(135deg,#f1fffd,#e5fbf8)!important;box-shadow:0 10px 28px rgba(33,167,162,.18)}
+.hero-bill-review:hover{border-color:#0871ca!important;box-shadow:0 14px 30px rgba(8,113,202,.16)}
+.bill-review-badge{position:absolute;top:7px;right:8px;padding:3px 7px;border-radius:999px;background:#21a7a2;color:#062b42!important;font-size:8px!important;font-weight:950!important;letter-spacing:.1em}
+.bill-review-cta{background:linear-gradient(135deg,#0871ca,#0b8fd4)!important;box-shadow:0 8px 22px rgba(8,113,202,.2);font-weight:900!important}
+.bill-review-cta span{font-size:1.05em}
+.iphone-product-visual{display:none}
+@media(min-width:761px){
+  .iphone-launch-copy{position:relative;overflow:hidden;padding-right:42%}
+  .iphone-product-visual{display:block;position:absolute;right:0;top:0;width:40%;height:100%;background:#07182d;overflow:hidden}
+  .iphone-product-visual img{width:100%;height:100%;display:block;object-fit:contain}
+}
+@media(max-width:760px){
+  .hero-bill-review{grid-column:1/-1;min-height:64px!important;padding:12px 46px 11px 16px!important}
+  .hero-bill-review strong{font-size:15px!important}
+  .hero-bill-review span:not(.bill-review-badge){font-size:10px!important}
+  .iphone-product-visual{display:block;margin:18px -22px -23px;height:220px;background:#07182d;overflow:hidden;border-radius:0 0 17px 17px}
+  .iphone-product-visual img{width:100%;height:100%;display:block;object-fit:contain}
+  .repair-type-card .repair-icon{width:42px;height:42px;border-radius:12px;margin-bottom:12px}
+  .repair-type-card h3{margin-top:0}
+}
