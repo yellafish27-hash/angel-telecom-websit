@@ -1664,3 +1664,37 @@
   .repair-type-card .repair-icon{width:42px;height:42px;border-radius:12px;margin-bottom:12px}
   .repair-type-card h3{margin-top:0}
 }
+
+
+/* Phone accessories section */
+.accessories-section{padding:42px 4%;background:#f7fafc}
+.accessories-wrap{max-width:1280px;margin:0 auto}
+.accessories-heading{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);gap:30px;align-items:end;margin-bottom:22px}
+.accessories-eyebrow{font-size:.68rem;font-weight:900;letter-spacing:.16em;color:#0871ca;margin-bottom:8px}
+.accessories-heading h2{font-size:clamp(2rem,3.2vw,3rem);line-height:1.02;letter-spacing:-.045em;margin:0}
+.accessories-heading>p{font-size:.9rem;line-height:1.5;margin:0;color:#526171}
+.accessories-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.accessory-card{display:flex;flex-direction:column;background:#fff;border-radius:18px;overflow:hidden;border:1px solid #e4ebf0;box-shadow:0 8px 24px rgba(9,49,82,.06);text-decoration:none;color:inherit;transition:transform .2s ease,box-shadow .2s ease}
+.accessory-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(9,49,82,.1)}
+.accessory-image{height:165px;background:#f2f5f7;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.accessory-image img{width:100%;height:100%;object-fit:cover;display:block}
+.accessory-image-samsung img{object-fit:contain;padding:24px;box-sizing:border-box}
+.accessory-copy{padding:15px 16px 16px}
+.accessory-copy h3{font-size:1.05rem;margin:0 0 6px;color:#073765}
+.accessory-copy p{font-size:.78rem;line-height:1.4;color:#5c6975;margin:0 0 12px}
+.accessory-copy b{font-size:.74rem;color:#0871ca}
+@media(max-width:900px){
+  .accessories-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .accessories-section{padding:30px 16px}
+  .accessories-heading{display:block;margin-bottom:16px}
+  .accessories-heading h2{font-size:2rem;margin-bottom:10px}
+  .accessories-heading>p{font-size:.88rem}
+  .accessories-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .accessory-image{height:125px}
+  .accessory-copy{padding:12px 12px 13px}
+  .accessory-copy h3{font-size:.92rem}
+  .accessory-copy p{font-size:.72rem}
+  .accessory-copy b{font-size:.68rem}
+}
