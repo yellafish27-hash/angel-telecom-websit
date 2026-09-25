@@ -1698,3 +1698,23 @@
   .accessory-copy h3{font-size:1.08rem}
   .accessory-copy p{font-size:.76rem}
 }
+
+/* Make the mobile technology lifecycle a stronger core section */
+.lifecycle-feature{padding:34px 4% 38px;background:linear-gradient(135deg,#063c73 0%,#075b91 58%,#0871ca 100%);color:#fff}
+.lifecycle-feature .section-title-centre h2{font-size:clamp(2rem,3.8vw,3.2rem);line-height:1;letter-spacing:-.045em;color:#fff;margin-bottom:9px}
+.lifecycle-feature .section-title-centre p{font-size:.95rem;line-height:1.5;color:rgba(255,255,255,.82);max-width:760px}
+.lifecycle-feature .lifecycle-items{max-width:1240px;margin:25px auto 0}
+.lifecycle-feature .lifecycle-items i{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2);color:#fff;width:52px;height:52px;font-size:23px}
+.lifecycle-feature .lifecycle-items b{font-size:14px;color:#fff}
+.lifecycle-feature .lifecycle-items span{font-size:10.5px;line-height:1.35;color:rgba(255,255,255,.76)}
+.lifecycle-feature .lifecycle-items em{color:rgba(255,255,255,.6);font-size:24px}
+@media(max-width:760px){
+  .lifecycle-feature{padding:32px 16px 34px}
+  .lifecycle-feature .section-title-centre h2{font-size:2rem;line-height:1.02}
+  .lifecycle-feature .section-title-centre p{font-size:.88rem}
+  .lifecycle-feature .lifecycle-items{margin-top:22px}
+  .lifecycle-feature .lifecycle-items i{width:46px;height:46px;font-size:21px}
+  .lifecycle-feature .lifecycle-items b{font-size:13px}
+  .lifecycle-feature .lifecycle-items span{font-size:9.5px}
+  .lifecycle-feature .lifecycle-items em{font-size:21px}
+}
