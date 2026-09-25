@@ -1410,12 +1410,7 @@
   .iphone-launch-panel h3{font-size:21px;margin:9px 0 7px}
   .iphone-launch-panel p{font-size:13px;line-height:1.4;margin-bottom:12px}
 
-  .lifecycle-strip{min-height:0!important;padding:15px 4% 17px}
-  .section-title-centre h2{font-size:22px}
-  .section-title-centre p{font-size:10.5px;margin:4px auto 10px}
-  .lifecycle-items i{width:40px;height:40px;font-size:18px}
-  .lifecycle-items b{font-size:11.5px}
-  .lifecycle-items span{font-size:8.8px}
+  /* Lifecycle flow is styled by the dedicated lifecycle-flow rules below. */
 
   .home-intro.home-intro-blue{min-height:0!important;padding:34px 0!important}
   .home-intro.home-intro-blue .section-title-centre h2{font-size:26px}
