@@ -1807,3 +1807,44 @@
     height:29px;
   }
 }
+
+
+/* Lifecycle flow — clean single journey */
+.lifecycle-flow{padding:52px 4% 44px;background:linear-gradient(180deg,#f8fbfd 0%,#fff 100%);border-top:1px solid #e7eef3;border-bottom:1px solid #e7eef3}
+.lifecycle-flow-inner{max-width:1320px;margin:0 auto}
+.lifecycle-intro{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);gap:55px;align-items:end;margin-bottom:34px}
+.lifecycle-intro h2{font-size:clamp(2.5rem,4vw,4rem);line-height:.98;letter-spacing:-.055em;margin:0;color:#073765}
+.lifecycle-intro p{font-size:.95rem;line-height:1.55;color:#526171;margin:0;max-width:560px}
+.lifecycle-track{position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:0;align-items:start}
+.lifecycle-track::before{content:"";position:absolute;left:8.333%;right:8.333%;top:51px;height:2px;background:#cfe0e9;z-index:0}
+.lifecycle-step{position:relative;z-index:1;min-height:0;padding:0 10px;border:0;border-radius:0;background:none;text-decoration:none;color:inherit;text-align:center;box-shadow:none;transition:none}
+.lifecycle-step:hover{transform:none;border:0;box-shadow:none}
+.lifecycle-step-number{display:block;font-size:.62rem;font-weight:900;letter-spacing:.13em;color:#0871ca;margin-bottom:9px}
+.lifecycle-step i,.lifecycle-step-final i{display:grid;place-items:center;width:74px;height:74px;margin:0 auto 13px;border-radius:50%;background:#fff;border:2px solid #cfe0e9;color:#0871ca;font-size:0;font-style:normal;box-shadow:0 5px 18px rgba(9,49,82,.07);position:relative}
+.lifecycle-step i::before{width:40px;height:40px}
+.lifecycle-step b{display:block;font-size:1.02rem;color:#073765;margin-bottom:5px}
+.lifecycle-step>span:last-child{display:block;font-size:.72rem;line-height:1.35;color:#687783}
+.lifecycle-step-final i{border-color:#9bd8c9;background:#f4fcfa}
+.lifecycle-loop{text-align:center;margin-top:28px;font-size:.76rem;color:#667783}
+.lifecycle-loop span{display:inline-grid;place-items:center;width:26px;height:26px;margin-right:6px;border-radius:50%;background:#e9f5fb;color:#0871ca;font-size:16px;vertical-align:middle}
+@media(max-width:1050px) and (min-width:761px){
+  .lifecycle-flow{padding-left:3%;padding-right:3%}
+  .lifecycle-track{grid-template-columns:repeat(3,1fr);row-gap:30px}
+  .lifecycle-track::before{display:none}
+}
+@media(max-width:760px){
+  .lifecycle-flow{padding:36px 16px 32px}
+  .lifecycle-intro{display:block;margin-bottom:24px}
+  .lifecycle-intro h2{font-size:2.35rem;margin-bottom:11px}
+  .lifecycle-intro p{font-size:.88rem}
+  .lifecycle-track{display:grid;grid-template-columns:repeat(2,1fr);gap:24px 4px}
+  .lifecycle-track::before{display:none}
+  .lifecycle-step{padding:0 7px}
+  .lifecycle-step-number{margin-bottom:6px}
+  .lifecycle-step i,.lifecycle-step-final i{width:58px;height:58px;margin-bottom:9px}
+  .lifecycle-step i::before{width:31px;height:31px}
+  .lifecycle-step-final i::before{width:33px;height:33px}
+  .lifecycle-step b{font-size:.92rem}
+  .lifecycle-step>span:last-child{font-size:.68rem}
+  .lifecycle-loop{font-size:.72rem;line-height:1.4;margin-top:22px}
+}
