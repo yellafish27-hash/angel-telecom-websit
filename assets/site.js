@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 /* Optional Google Analytics 4: only load after a visitor opts in. */
 (()=>{
   'use strict';
-  const measurementId='G-8E40S9VR8';
+  const measurementId='G-8E400S9VR8';
   const consentKey='angel_analytics_choice_v1';
   const pendingKey='angel_pending_enquiry_v1';
   let analyticsStarted=false;
