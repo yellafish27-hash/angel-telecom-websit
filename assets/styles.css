@@ -1766,3 +1766,14 @@
   .lifecycle-items b{font-size:10px}
   .lifecycle-items span{font-size:8px;line-height:1.15}
 }
+
+/* Optional analytics consent: functional without loading third-party analytics. */
+.angel-cookie-banner{position:fixed;z-index:99999;bottom:16px;left:16px;right:16px;max-width:880px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:22px;padding:19px 22px;background:#fff;border:1px solid #c9d6e2;border-radius:14px;box-shadow:0 10px 36px rgba(12,35,58,.24);color:#15354c;font-family:inherit}
+.angel-cookie-banner strong{font-size:17px}
+.angel-cookie-banner p{font-size:13px;line-height:1.5;margin:5px 0 0}
+.angel-cookie-banner a{text-decoration:underline;color:#175b90}
+.angel-cookie-actions{display:flex;gap:9px;flex-shrink:0;flex-wrap:wrap}
+.angel-cookie-actions button{font:inherit;cursor:pointer;font-size:13px;font-weight:600;padding:11px 14px;border-radius:8px;background:#fff;border:1px solid #2d5573;color:#18496b}
+.angel-cookie-actions button[data-analytics="accept"]{color:#fff;background:#145da0;border-color:#145da0}
+.angel-cookie-actions button:focus-visible{outline:3px solid #f1aa42;outline-offset:2px}
+@media(max-width:660px){.angel-cookie-banner{bottom:8px;left:8px;right:8px;display:block;padding:15px}.angel-cookie-actions{margin-top:12px;flex-direction:column}.angel-cookie-actions button{width:100%}}
