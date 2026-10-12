@@ -28,3 +28,83 @@ document.addEventListener('DOMContentLoaded',()=>{
     window.scrollTo({top:0,behavior:'smooth'});
   });
 });
+
+
+/* Optional Google Analytics 4: only load after a visitor opts in. */
+(()=>{
+  'use strict';
+  const measurementId='G-8E40S9VR8';
+  const consentKey='angel_analytics_choice_v1';
+  const pendingKey='angel_pending_enquiry_v1';
+  let analyticsStarted=false;
+  let banner;
+
+  function choice(){
+    try{return localStorage.getItem(consentKey);}catch(e){return null;}
+  }
+  function saveChoice(value){
+    try{localStorage.setItem(consentKey,value);}catch(e){/* private browser mode */}
+  }
+  function recordConfirmedEnquiry(){
+    const path=location.pathname.toLowerCase();
+    const expected=path.endsWith('/bill-review-thanks.html')?'bill_review_request':
+      path.endsWith('/thanks.html')?'contact_enquiry':null;
+    if(!expected||typeof window.gtag!=='function')return;
+    let pending;
+    try{pending=JSON.parse(sessionStorage.getItem(pendingKey)||'null');}catch(e){pending=null;}
+    if(!pending||pending.event!==expected||Date.now()-pending.time>30*60*1000)return;
+    // No names, addresses, phone numbers, uploaded bills or other personal data sent to GA.
+    window.gtag('event',expected,{engagement_time_msec:100});
+    try{sessionStorage.removeItem(pendingKey);}catch(e){/* ignore */}
+  }
+  function startAnalytics(){
+    if(analyticsStarted)return;
+    analyticsStarted=true;
+    window.dataLayer=window.dataLayer||[];
+    window.gtag=function(){window.dataLayer.push(arguments);};
+    window.gtag('js',new Date());
+    window.gtag('config',measurementId);
+    const script=document.createElement('script');
+    script.async=true;
+    script.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(measurementId);
+    document.head.appendChild(script);
+    recordConfirmedEnquiry();
+  }
+  function setChoice(value){
+    saveChoice(value);
+    if(banner){banner.remove();banner=null;}
+    if(value==='accepted')startAnalytics();
+  }
+  function showBanner(){
+    if(banner)return;
+    banner=document.createElement('section');
+    banner.className='angel-cookie-banner';
+    banner.setAttribute('role','dialog');
+    banner.setAttribute('aria-label','Optional analytics choices');
+    banner.innerHTML='<div class="angel-cookie-text"><strong>Help us improve our website</strong><p>With your permission, we use Google Analytics to understand visits and enquiries. You can decline and still use the site normally. <a href="privacy.html#analytics-choices">Privacy and cookies</a></p></div><div class="angel-cookie-actions"><button type="button" data-analytics="reject">Reject optional analytics</button><button type="button" data-analytics="accept">Accept analytics</button></div>';
+    banner.querySelector('[data-analytics="reject"]').addEventListener('click',()=>setChoice('rejected'));
+    banner.querySelector('[data-analytics="accept"]').addEventListener('click',()=>setChoice('accepted'));
+    document.body.appendChild(banner);
+  }
+  function init(){
+    // A confirmation page alone is not proof that a real form was submitted.
+    // Only count one if this browser submitted the matching form recently.
+    document.querySelectorAll('form[action*="formsubmit.co"]').forEach(form=>{
+      const isBillReview=location.pathname.toLowerCase().endsWith('/bill-review.html');
+      const event=isBillReview?'bill_review_request':'contact_enquiry';
+      form.addEventListener('submit',()=>{
+        if(!form.checkValidity())return;
+        try{sessionStorage.setItem(pendingKey,JSON.stringify({event,time:Date.now()}));}catch(e){/* ignore */}
+      });
+    });
+    const privacySettings=document.getElementById('angel-analytics-settings');
+    if(privacySettings)privacySettings.addEventListener('click',e=>{
+      e.preventDefault();
+      showBanner();
+    });
+    if(choice()==='accepted')startAnalytics();
+    else if(choice()!=='rejected')showBanner();
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);
+  else init();
+})();
