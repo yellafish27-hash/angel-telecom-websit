@@ -57,6 +57,16 @@ document.addEventListener('DOMContentLoaded',()=>{
     window.gtag('event',expected,{engagement_time_msec:100});
     try{sessionStorage.removeItem(pendingKey);}catch(e){/* ignore */}
   }
+  function updateDiagnostics(message){
+    const el=document.getElementById('angel-analytics-diagnostic');
+    if(el)el.textContent=message;
+  }
+  function refreshDiagnostics(){
+    const state=choice();
+    if(state==='accepted')updateDiagnostics('Analytics permission: Accepted. Checking whether the Google Analytics script loads…');
+    else if(state==='rejected')updateDiagnostics('Analytics permission: Rejected. Google Analytics is not loaded.');
+    else updateDiagnostics('Analytics permission: Not yet chosen. Google Analytics is not loaded.');
+  }
   function startAnalytics(){
     if(analyticsStarted)return;
     analyticsStarted=true;
@@ -67,12 +77,15 @@ document.addEventListener('DOMContentLoaded',()=>{
     const script=document.createElement('script');
     script.async=true;
     script.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(measurementId);
+    script.addEventListener('load',()=>{updateDiagnostics('The Google Analytics script loaded in this browser. Realtime reporting must still be verified.');});
+    script.addEventListener('error',()=>{updateDiagnostics('Your browser did not load the Google Analytics script. A content blocker, network filter or connection problem may be responsible.');});
     document.head.appendChild(script);
     recordConfirmedEnquiry();
   }
   function setChoice(value){
     saveChoice(value);
     if(banner){banner.remove();banner=null;}
+    refreshDiagnostics();
     if(value==='accepted')startAnalytics();
   }
   function showBanner(){
@@ -102,6 +115,7 @@ document.addEventListener('DOMContentLoaded',()=>{
       e.preventDefault();
       showBanner();
     });
+    refreshDiagnostics();
     if(choice()==='accepted')startAnalytics();
     else if(choice()!=='rejected')showBanner();
   }
