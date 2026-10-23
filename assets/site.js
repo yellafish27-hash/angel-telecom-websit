@@ -86,7 +86,14 @@ document.addEventListener('DOMContentLoaded',()=>{
     saveChoice(value);
     if(banner){banner.remove();banner=null;}
     refreshDiagnostics();
-    if(value==='accepted')startAnalytics();
+    if(value==='accepted'){
+      window['ga-disable-'+measurementId]=false;
+      startAnalytics();
+    }else if(analyticsStarted){
+      // Stop collection immediately when a returning visitor withdraws consent.
+      window['ga-disable-'+measurementId]=true;
+      location.reload();
+    }
   }
   function showBanner(){
     if(banner)return;
@@ -109,6 +116,21 @@ document.addEventListener('DOMContentLoaded',()=>{
         if(!form.checkValidity())return;
         try{sessionStorage.setItem(pendingKey,JSON.stringify({event,time:Date.now()}));}catch(e){/* ignore */}
       });
+    });
+    // Count intent separately from confirmed enquiries, and never send form values
+    // or external upload URLs (which can contain private sharing tokens).
+    document.addEventListener('click',e=>{
+      const link=e.target.closest('a[href]');
+      if(!link||choice()!=='accepted'||typeof window.gtag!=='function')return;
+      let target;
+      try{target=new URL(link.href,location.href);}catch(error){return;}
+      let event;
+      if(target.origin===location.origin&&target.pathname==='/bill-review.html')event='bill_review_click';
+      else if(target.hostname==='www.pocketgeektechrepair.co.uk')event='repair_centre_click';
+      else if(target.protocol==='tel:')event='phone_contact_click';
+      else if(target.protocol==='mailto:')event='email_contact_click';
+      else if(target.hostname==='angeltelecom1-my.sharepoint.com')event='bill_upload_click';
+      if(event)window.gtag('event',event,{page_path:location.pathname});
     });
     const privacySettings=document.getElementById('angel-analytics-settings');
     if(privacySettings)privacySettings.addEventListener('click',e=>{
