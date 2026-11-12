@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     // Only count one if this browser submitted the matching form recently.
     document.querySelectorAll('form[action*="formsubmit.co"]').forEach(form=>{
       const isBillReview=location.pathname.toLowerCase().endsWith('/bill-review.html');
-      const event=isBillReview?'bill_review_request':'contact_enquiry';
+      if(form.hasAttribute('data-repair-finder'))return; // Repair forms use AJAX and record only confirmed responses.\n      const event=isBillReview?'bill_review_request':'contact_enquiry';
       form.addEventListener('submit',()=>{
         if(!form.checkValidity())return;
         try{sessionStorage.setItem(pendingKey,JSON.stringify({event,time:Date.now()}));}catch(e){/* ignore */}
