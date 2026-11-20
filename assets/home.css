@@ -1,0 +1,138 @@
+/* Repair-first homepage (index.html only). Header and footer styles live in site-chrome.css. */
+.repair-home{
+  --rh-navy:#0b3158;
+  --rh-navy-deep:#082a46;
+  --rh-ink:#122334;
+  --rh-blue:#0871ca;
+  --rh-blue-hover:#065fa9;
+  --rh-teal:#18c7d0;
+  --rh-muted:#526879;
+  --rh-pale:#f4f8fb;
+  --rh-line:#dce6ee;
+  --rh-icon-bg:#edf8f8;
+  margin:0;
+  background:#fff;
+  color:var(--rh-ink);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.6;
+}
+.repair-home *{box-sizing:border-box}
+.repair-home a:focus-visible,.repair-home button:focus-visible,.repair-home select:focus-visible{outline:3px solid var(--rh-blue);outline-offset:3px}
+.rh-eyebrow{margin:0 0 10px;text-transform:uppercase;letter-spacing:.16em;font-size:.82rem;font-weight:800;color:var(--rh-muted)}
+
+
+/* Hero */
+.rh-hero{background:radial-gradient(circle at 82% 22%,rgba(24,199,208,.12),transparent 38%),linear-gradient(160deg,var(--rh-navy) 0%,var(--rh-navy-deep) 100%);color:#fff;padding:96px 0 100px}
+.rh-hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:56px;align-items:center}
+.rh-hero .rh-eyebrow{color:var(--rh-teal);letter-spacing:.2em}
+.rh-hero h1{margin:0 0 24px;font-size:clamp(2.6rem,5.6vw,4.6rem);line-height:1.02;letter-spacing:-.04em;font-weight:850}
+.rh-hero-lead{margin:0 0 34px;max-width:36em;font-size:clamp(1.08rem,1.7vw,1.3rem);line-height:1.65;color:rgba(255,255,255,.88)}
+.rh-actions{display:flex;flex-wrap:wrap;gap:14px}
+.rh-btn{display:inline-flex;align-items:center;gap:12px;padding:16px 28px;border-radius:999px;font-weight:750;font-size:1.05rem;text-decoration:none;border:1px solid transparent;font-family:inherit;cursor:pointer;line-height:1.3}
+.rh-btn-primary{background:var(--rh-blue);color:#fff}
+.rh-btn-primary:hover{background:var(--rh-blue-hover)}
+.rh-btn-outline{border-color:rgba(255,255,255,.45);color:#fff;background:transparent}
+.rh-btn-outline:hover{background:rgba(255,255,255,.08)}
+.rh-hero a:focus-visible{outline-color:#7fe3ea}
+.rh-hero-meta{display:flex;flex-wrap:wrap;gap:12px 32px;margin:34px 0 0;padding:0;list-style:none;font-size:.98rem;color:rgba(255,255,255,.88)}
+.rh-hero-meta li{display:flex;align-items:center;gap:10px}
+.rh-hero-meta svg{width:22px;height:22px;flex:none;stroke:currentColor;fill:none;stroke-width:1.6}
+
+/* Store finder panel */
+.rh-finder{background:#fff;color:var(--rh-ink);border-radius:28px;padding:40px;box-shadow:0 24px 60px rgba(4,20,40,.28)}
+.rh-finder-head{display:flex;gap:22px;align-items:flex-start;margin-bottom:28px}
+.rh-icon-tile{display:grid;place-items:center;flex:none;width:72px;height:72px;border-radius:18px;background:var(--rh-icon-bg);color:var(--rh-blue)}
+.rh-icon-tile svg{width:28px;height:28px;stroke:currentColor;fill:none;stroke-width:1.7}
+.rh-finder h2{margin:4px 0 6px;font-size:1.75rem;line-height:1.2;letter-spacing:-.03em;color:var(--rh-navy)}
+.rh-finder-head p{margin:0;color:var(--rh-muted)}
+.rh-finder label{display:block;margin-bottom:12px;font-weight:750;color:var(--rh-navy)}
+.rh-finder-row{display:flex;gap:16px}
+.rh-select{flex:1;min-width:0;appearance:none;-webkit-appearance:none;padding:18px 52px 18px 24px;border:1px solid #cdd9e3;border-radius:16px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%23122334' stroke-width='1.6' fill='none'/%3E%3C/svg%3E") no-repeat right 20px center;font:inherit;font-size:1.05rem;color:var(--rh-ink)}
+.rh-finder .rh-btn{border-radius:16px;padding:18px 30px}
+.rh-finder .rh-btn:focus-visible,.rh-finder a:focus-visible{outline-color:var(--rh-blue)}
+.rh-finder-msg{margin:12px 0 0;color:#9a3412;font-weight:650}
+.rh-finder-msg:empty{display:none}
+.rh-result{margin-top:24px;padding:24px;border-radius:20px;background:var(--rh-pale);border:1px solid var(--rh-line)}
+.rh-result[hidden]{display:none}
+.rh-result h3{margin:0 0 4px;font-size:1.3rem;color:var(--rh-navy);letter-spacing:-.02em}
+.rh-result address{font-style:normal;color:var(--rh-muted);margin-bottom:16px}
+.rh-result-note{margin:14px 0 0;font-size:.92rem;color:var(--rh-muted)}
+.rh-result-note a{color:var(--rh-blue);font-weight:650}
+
+/* Store cards */
+.rh-stores{background:var(--rh-pale);padding:84px 0 92px}
+.rh-section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 64px;align-items:end;margin-bottom:40px}
+.rh-section-head h2{margin:0;font-size:clamp(2rem,3.6vw,2.9rem);line-height:1.08;letter-spacing:-.035em;color:var(--rh-navy);font-weight:850}
+.rh-section-head p{margin:0;font-size:1.1rem;color:var(--rh-muted)}
+.rh-store-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;margin:0;padding:0;list-style:none}
+.rh-store{display:flex;flex-direction:column;background:#fff;border:1px solid var(--rh-line);border-radius:24px;padding:30px 28px}
+.rh-store .rh-eyebrow{font-size:.78rem}
+.rh-store h3{margin:6px 0 14px;font-size:1.65rem;letter-spacing:-.03em;line-height:1.15}
+.rh-store h3 a{color:var(--rh-navy);text-decoration:none}
+.rh-store h3 a:hover{text-decoration:underline}
+.rh-store address{font-style:normal;color:var(--rh-muted);margin-bottom:24px}
+.rh-links{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:auto}
+.rh-link{color:var(--rh-blue);font-weight:750;text-decoration:none}
+.rh-link:hover{text-decoration:underline}
+
+/* What we repair */
+.rh-section{padding:88px 0}
+.rh-repair-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:0;padding:0;list-style:none}
+.rh-repair{border:1px solid var(--rh-line);border-radius:24px;padding:32px 28px;background:#fff;display:flex;flex-direction:column}
+.rh-repair .rh-icon-tile{width:60px;height:60px;border-radius:16px;margin-bottom:20px}
+.rh-repair h3{margin:0 0 10px;font-size:1.3rem;color:var(--rh-navy);letter-spacing:-.02em}
+.rh-repair p{margin:0 0 20px;color:var(--rh-muted)}
+.rh-repair .rh-link{margin-top:auto}
+.rh-small{margin:24px 0 0;color:var(--rh-muted);font-size:.95rem}
+
+/* Steps */
+.rh-steps-section{background:var(--rh-pale);padding:84px 0}
+.rh-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:0;padding:0;list-style:none;counter-reset:step}
+.rh-step{background:#fff;border:1px solid var(--rh-line);border-radius:24px;padding:30px 28px}
+.rh-step-num{display:grid;place-items:center;width:44px;height:44px;border-radius:999px;background:var(--rh-blue);color:#fff;font-weight:800;margin-bottom:18px}
+.rh-step h3{margin:0 0 8px;font-size:1.2rem;color:var(--rh-navy)}
+.rh-step p{margin:0;color:var(--rh-muted)}
+
+/* Business panel */
+.rh-business{padding:88px 0}
+.rh-business-panel{display:grid;grid-template-columns:minmax(0,1fr);max-width:none;gap:40px;align-items:center;padding:48px;border-radius:28px;background:radial-gradient(circle at 90% 10%,rgba(24,199,208,.12),transparent 40%),var(--rh-navy);color:#fff}
+.rh-business-panel .rh-eyebrow{color:var(--rh-teal)}
+.rh-business-panel h2{margin:0 0 14px;font-size:clamp(1.8rem,3vw,2.4rem);line-height:1.12;letter-spacing:-.035em}
+.rh-business-panel p{margin:0 0 26px;color:rgba(255,255,255,.88);font-size:1.05rem}
+.rh-business-panel a:focus-visible{outline-color:#7fe3ea}
+.rh-business-links{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:4px 20px}
+.rh-business-links a{display:block;padding:9px 0;color:#fff;text-decoration:none;font-weight:650;border-bottom:1px solid rgba(255,255,255,.14)}
+.rh-business-links a:hover{color:#bdf3f6}
+
+
+/* Responsive */
+@media (max-width:1080px){
+  .rh-store-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rh-hero-grid{grid-template-columns:1fr;gap:48px}
+}
+@media (max-width:900px){
+  .rh-section-head{grid-template-columns:1fr;align-items:start}
+  .rh-repair-grid,.rh-steps{grid-template-columns:1fr}
+  .rh-business-panel{grid-template-columns:1fr;padding:36px 28px}
+}
+@media (max-width:600px){
+  .rh-hero{padding:64px 0 72px}
+  .rh-finder{padding:26px 22px;border-radius:24px}
+  .rh-finder-head{gap:16px}
+  .rh-icon-tile{width:56px;height:56px}
+  .rh-finder h2{font-size:1.45rem}
+  .rh-finder-row{flex-direction:column}
+  .rh-finder .rh-btn{justify-content:center}
+  .rh-store-grid{grid-template-columns:1fr}
+  .rh-actions .rh-btn{width:100%;justify-content:center}
+  .rh-stores,.rh-section,.rh-steps-section,.rh-business{padding:64px 0}
+  .rh-business-links{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.repair-home *{scroll-behavior:auto!important}}
+
+.repair-home .rh-business-panel p{max-width:46em}
+
+.rh-business-panel p a{color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.45);text-underline-offset:3px}
+
+/* Comfortable tap targets for the store card links */
+.rh-links .rh-link{display:inline-flex;align-items:center;min-height:44px}

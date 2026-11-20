@@ -1,4 +1,4 @@
-Angel Telecom website — content and links update
+Angel Telecom website: content and links update
 
 This version keeps the existing design and branding while expanding the business copy, calls-to-action and links.
 

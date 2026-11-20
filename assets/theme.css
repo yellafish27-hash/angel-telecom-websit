@@ -1,0 +1,159 @@
+/* Site-wide type and colour polish. Loaded after styles.css and site-chrome.css on every page.
+   Palette: navy #0b3158 / deep #082a46 / darkest #061d31, blue #0871ca, teal text #0d7377 (on light),
+   light teal #67dfd5 (on navy), muted text #526879, pale surface #f4f8fb, lines #dce6ee. */
+
+/* Type: one font everywhere, crisp rendering, form controls use the page font (not Arial) */
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+button,input,select,textarea{font-family:inherit}
+h1,h2,h3{text-wrap:balance}
+p{text-wrap:pretty}
+
+/* Small labels above headings: readable teal on light backgrounds */
+.eyebrow,.design-eyebrow,.offers-eyebrow,.accessories-eyebrow,.bill-review-eyebrow,.bill-upload-card-eyebrow{color:#0d7377;font-size:.8rem}
+.card .icon,.business-size-card .icon{color:#0d7377}
+
+/* Inner-page banners: same navy and soft teal glow as the homepage */
+.business-mobile-hero,.sim-only-hero,.devices-hero,.repairs-hero,.refurbished-hero,.solutions-hero,.contact-hero,.bill-upload-hero{background:radial-gradient(circle at 82% 22%,rgba(24,199,208,.12),transparent 38%),linear-gradient(160deg,#0b3158 0%,#082a46 100%)!important}
+.business-mobile-hero:after,.sim-only-hero:after,.devices-hero:after,.repairs-hero:after,.refurbished-hero:after,.solutions-hero:after,.contact-hero:after,.bill-upload-hero:after{display:none!important}
+.business-mobile-hero .eyebrow,.sim-only-hero .eyebrow,.devices-hero .eyebrow,.repairs-hero .eyebrow,.refurbished-hero .eyebrow,.solutions-hero .eyebrow,.contact-hero .eyebrow,.bill-upload-hero .eyebrow{color:#67dfd5}
+.business-mobile-hero .home-back,.sim-only-hero .home-back,.devices-hero .home-back,.repairs-hero .home-back,.refurbished-hero .home-back,.solutions-hero .home-back,.contact-hero .home-back,.bill-upload-hero .home-back{color:#bdf3f6}
+.business-mobile-hero .home-back:hover,.sim-only-hero .home-back:hover,.devices-hero .home-back:hover,.repairs-hero .home-back:hover,.refurbished-hero .home-back:hover,.solutions-hero .home-back:hover,.contact-hero .home-back:hover,.bill-upload-hero .home-back:hover{color:#fff}
+
+/* Minimum readable sizes for small card text */
+.centre-card-body p,.centre-card-body .google-link,.service-card p,.service-card b,.offer-card p,.offer-card b{font-size:.875rem}
+
+/* Visible keyboard focus everywhere */
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #0871ca;outline-offset:3px}
+
+/* Dark panels: same navy family as the banners, light teal labels, light links */
+.bill-review-section,.cta-box,.refurbished-business .panel{background:radial-gradient(circle at 88% 12%,rgba(24,199,208,.12),transparent 42%),linear-gradient(160deg,#0b3158 0%,#082a46 100%)!important}
+.bill-upload-hero .design-eyebrow,.bill-review-section .bill-review-eyebrow,#business-mobile-control .panel .eyebrow,.controller-upgrade-panel .eyebrow,.refurbished-business .panel .eyebrow{color:#67dfd5}
+.contact-hero .text-link{color:#bdf3f6}
+.contact-hero .text-link:hover{color:#fff}
+.bill-review-section small{color:#d9e6ef}
+.business-mobile-hero :focus-visible,.sim-only-hero :focus-visible,.devices-hero :focus-visible,.repairs-hero :focus-visible,.refurbished-hero :focus-visible,.solutions-hero :focus-visible,.contact-hero :focus-visible,.bill-upload-hero :focus-visible,.bill-review-section :focus-visible,.cta-box :focus-visible,.refurbished-business .panel :focus-visible,.controller-upgrade-panel :focus-visible,#business-mobile-control .panel :focus-visible,.offers-section :focus-visible{outline-color:#7fe3ea}
+
+/* Four shops in one even row (no orphan card), 2 x 2 on tablets, stacked on phones */
+.centre-cards{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+@media (max-width:1080px){.centre-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media (max-width:600px){.centre-cards{grid-template-columns:1fr!important}}
+
+/* Business Solutions "Our services": clean text cards (stock photos removed) */
+.services-section .service-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1180px;margin:0 auto}
+.services-section .service-card{display:flex;flex-direction:column;min-height:0;background:#fff;border:1px solid #dce6ee;border-radius:20px;box-shadow:0 8px 24px rgba(8,42,70,.06);overflow:visible;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.services-section .service-card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(8,42,70,.12)}
+.services-section .service-card div{display:flex;flex-direction:column;flex:1;padding:26px 26px 24px}
+.services-section .service-card h3{margin:0 0 8px;font-size:1.15rem;line-height:1.25;color:#0b3158;letter-spacing:-.01em}
+.services-section .service-card p{margin:0 0 18px;min-height:0;font-size:.95rem;line-height:1.55;color:#526879}
+.services-section .service-card b{margin-top:auto;font-size:.95rem;color:#0871ca;font-weight:700}
+@media (max-width:900px){.services-section .service-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.services-section .service-cards{grid-template-columns:1fr;gap:12px}.services-section .service-card div{padding:20px}}
+@media (prefers-reduced-motion:reduce){.services-section .service-card{transition:none}.services-section .service-card:hover{transform:none}}
+.services-section{background:radial-gradient(circle at 88% 12%,rgba(24,199,208,.12),transparent 42%),linear-gradient(160deg,#0b3158 0%,#082a46 100%)!important;padding:72px 16px 80px!important}
+.services-section .section-heading-row{max-width:1180px;margin:0 auto 28px;justify-content:flex-start}
+.services-section .section-heading-row h2{color:#fff;font-size:clamp(1.8rem,3vw,2.4rem);letter-spacing:-.035em}
+.services-section .service-card{padding:0!important}
+.services-section .service-card:focus-visible{outline:3px solid #7fe3ea;outline-offset:3px}
+@media (max-width:600px){.services-section{padding:56px 16px 60px!important}}
+.services-section .service-card{align-items:stretch;text-align:left}
+.services-section .section-heading-row h2{text-align:left;width:100%}
+.services-section .section-heading-row{width:100%;align-self:stretch}
+
+/* Remaining dark panels use the shared navy */
+.about-page .about-approach-panel,.controller-upgrade-panel,.repairs-business .panel{background:radial-gradient(circle at 88% 12%,rgba(24,199,208,.12),transparent 42%),linear-gradient(160deg,#0b3158 0%,#082a46 100%)!important}
+.about-page .about-approach-panel .eyebrow,.repairs-business .panel .eyebrow{color:#67dfd5}
+.about-page .about-approach-panel :focus-visible,.repairs-business .panel :focus-visible{outline-color:#7fe3ea}
+
+/* Buttons wrap instead of pushing the page wider on phones */
+.hero-buttons a,.actions a,.btn,.blue-button,.outline-button{white-space:normal}
+@media (max-width:600px){.hero-buttons,.actions{display:flex!important;flex-direction:column;align-items:stretch;gap:12px}.hero-buttons a,.actions a{justify-content:center;text-align:center;width:100%}}
+
+/* Comfortable tap targets for small text links */
+.centre-card-body .google-link{display:inline-flex;align-items:center;min-height:44px}
+.offer-card b,.service-card b{display:inline-flex;align-items:center;min-height:32px}
+
+/* Shop-page repair enquiry form: same rounded field style as the homepage store finder.
+   CSS only; the form markup, fields and destination are unchanged. */
+form[data-repair-finder]{max-width:880px!important;padding:36px!important;border-radius:28px!important;border:0!important;background:radial-gradient(circle at 88% 12%,rgba(24,199,208,.12),transparent 42%),linear-gradient(160deg,#0b3158 0%,#082a46 100%)!important;color:#fff;box-shadow:0 24px 60px rgba(4,20,40,.18)}
+form[data-repair-finder] .grid-3{gap:18px 20px;margin-bottom:18px}
+form[data-repair-finder] label{display:flex;flex-direction:column;gap:8px;font-size:.92rem;font-weight:650;color:#e6eef4}
+form[data-repair-finder] label br{display:none}
+form[data-repair-finder] select,form[data-repair-finder] input[type=text],form[data-repair-finder] input[type=email],form[data-repair-finder] input[type=tel],form[data-repair-finder] textarea{width:100%!important;min-height:52px;padding:14px 16px!important;border:1px solid #cdd9e3!important;border-radius:14px!important;background-color:#fff;color:#122334;font-size:1rem;font-weight:400;line-height:1.4;box-shadow:none}
+form[data-repair-finder] select{-webkit-appearance:none;appearance:none;padding-right:44px!important;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%23122334' stroke-width='1.6' fill='none'/%3E%3C/svg%3E") no-repeat right 18px center}
+form[data-repair-finder] select:disabled{background-color:#e6eef4;color:#526879;cursor:not-allowed;opacity:1}
+form[data-repair-finder] textarea{min-height:96px;resize:vertical}
+form[data-repair-finder] ::placeholder{color:#6b7c8b}
+form[data-repair-finder] :focus-visible{outline:3px solid #7fe3ea!important;outline-offset:2px}
+form[data-repair-finder] small{color:#d9e6ef;font-size:.88rem}
+form[data-repair-finder] p{margin:0 0 18px}
+form[data-repair-finder] button[type=submit]{min-height:52px;padding:14px 28px;border-radius:999px;font-size:1rem}
+@media (max-width:760px){form[data-repair-finder]{padding:24px 20px!important;border-radius:22px!important}form[data-repair-finder] .grid-3{grid-template-columns:1fr!important}form[data-repair-finder] button[type=submit]{width:100%}}
+
+/* plan.com awards as tidy labels (no images loaded from other sites) */
+.award-list{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:24px 0 12px;padding:0}
+.award-list li{padding:10px 16px;border:1px solid rgba(255,255,255,.28);border-radius:999px;color:#fff;font-weight:650;font-size:.92rem;background:rgba(255,255,255,.06)}
+.award-list li::before{content:"";display:inline-block;width:8px;height:8px;margin-right:10px;border-radius:50%;background:#67dfd5;vertical-align:middle}
+/* Accessories: hydrogel explainer panel */
+.hydrogel-why{height:100%;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(circle at 88% 12%,rgba(24,199,208,.12),transparent 42%),linear-gradient(160deg,#0b3158 0%,#082a46 100%)!important;color:#fff;border:0!important}
+.hydrogel-why h3{color:#fff;font-size:1.6rem;line-height:1.2;letter-spacing:-.02em;margin:0 0 12px}
+.hydrogel-why p{color:#d9e6ef;margin:0}
+.hydrogel-why .eyebrow{color:#67dfd5}
+
+/* Shop pages: visit panel, four-up repair cards, small note */
+.shop-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.shop-grid .card{display:flex;flex-direction:column}
+.shop-grid .card h3{margin:0 0 8px;font-size:1.1rem;color:#0b3158}
+.shop-grid .card p{margin:0 0 14px;color:#526879}
+.shop-grid .card a{margin-top:auto;font-weight:700;color:#0871ca;text-decoration:none;min-height:32px;display:inline-flex;align-items:center}
+.shop-note{margin:20px 0 0;color:#526879;font-size:.95rem}
+.shop-note a{color:#0871ca;font-weight:700}
+.shop-panel{background:#fff;border:1px solid #dce6ee;border-radius:24px;padding:32px}
+.shop-panel h3{margin:0 0 10px;font-size:1.4rem;color:#0b3158}
+.shop-panel address{font-style:normal;color:#526879;margin-bottom:20px;line-height:1.6}
+.shop-panel-actions{display:flex;flex-wrap:wrap;gap:10px}
+.shop-visit p{color:#526879}
+.shop-visit h2{margin-top:0}
+@media (max-width:1080px){.shop-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.shop-grid{grid-template-columns:1fr}.shop-panel{padding:24px}.shop-panel-actions .btn{width:100%}}
+
+/* Guides: same navy banner as other pages, readable article column */
+.guide-hero{padding:72px 0 64px!important}
+.guide-wrap{max-width:820px!important}
+.guide-hero h1{font-size:clamp(2rem,4.2vw,3rem);line-height:1.1;letter-spacing:-.03em;color:#fff;margin:0 0 16px}
+.guide-lead{font-size:1.2rem;color:#d9e6ef;margin:0;max-width:40em}
+.guide-body{padding-top:56px!important}
+.guide-body h2{font-size:1.45rem;line-height:1.25;letter-spacing:-.02em;color:#0b3158;margin:0 0 8px}
+.guide-body p{color:#122334;font-size:1.05rem;line-height:1.7}
+.guide-body .panel h2{color:inherit}
+.guide-author-photo{width:56px;height:56px;border-radius:50%;object-fit:cover;float:left;margin:0 14px 0 0}
+.guide-author{margin:0 0 28px;padding-top:14px;color:#526879!important;font-size:.95rem!important}
+.guide-body .panel{clear:both}
+.guide-hero{background:radial-gradient(circle at 82% 22%,rgba(24,199,208,.12),transparent 38%),linear-gradient(160deg,#0b3158 0%,#082a46 100%)!important;color:#fff}
+.guide-hero .eyebrow{color:#67dfd5}
+.guide-hero .home-back{color:#bdf3f6}
+.guide-hero .home-back:hover{color:#fff}
+.guide-hero :focus-visible{outline-color:#7fe3ea}
+
+/* Line icons that replace emoji and symbol characters */
+.about-value-icon svg,.offers-note-icon svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.about-value-icon{color:#0871ca}
+.offers-note-icon{display:grid;place-items:center;flex:none;width:52px;height:52px;border-radius:16px;background:#edf8f8;color:#0871ca}
+.inline-icon{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:-3px;margin-right:6px}
+.centre-card-body h3 .inline-icon{color:#0871ca}
+
+/* Long banner headings stay readable (max three lines on phones) */
+.page-hero h1{font-size:clamp(2.1rem,4.6vw,3.6rem);line-height:1.08;letter-spacing:-.03em;max-width:20em}
+
+/* Final audit fixes */
+.guide-hero .guide-lead{color:#d9e6ef}
+.guide-body .panel p,.guide-body .panel li{color:#d9e6ef}
+.guide-body .panel h2{color:#fff}
+.iphone-launch-badge{color:#fff!important}
+main a.home-back,.rh-repair .rh-link,.solutions-strip a,.shop-note a,.offers-note a,.section-head a,main p > a:only-child{min-height:44px;display:inline-flex;align-items:center}
+.panel > a:not(.btn),.card > a:not(.btn),.text-link,.iphone-launch-panel > a,.split > div > a:not(.btn),.container > a:not(.btn):not(.home-back){min-height:44px;display:inline-flex;align-items:center}
+
+/* About page: light colour grade on Stuart's photo so it sits in the navy/teal palette (original file untouched) */
+.about-page .about-stuart-image{position:relative;isolation:isolate}
+.about-page .about-stuart-image img{filter:saturate(.8) contrast(1.05) brightness(1.02)}
+.about-page .about-stuart-image::after{content:"";position:absolute;inset:0;pointer-events:none;mix-blend-mode:soft-light;opacity:.55;
+  background:linear-gradient(160deg,#18c7d0 0%,#0b3158 70%,#061d31 100%)}
