@@ -1,0 +1,55 @@
+/* Shared header, menu and footer used on every page. Load after styles.css. */
+/* Inter v4.1 (SIL Open Font License, see assets/fonts/Inter-LICENSE.txt), self-hosted: no requests to third parties */
+@font-face{font-family:"Inter";font-style:normal;font-weight:100 900;font-display:swap;src:url("fonts/InterVariable.woff2") format("woff2")}
+html{font-optical-sizing:auto}
+.rh-wrap{width:min(1180px,100% - 32px);margin:0 auto}
+[id]{scroll-margin-top:100px}
+.rh-skip{position:absolute;left:16px;top:-60px;z-index:100;background:#0b3158;color:#fff;padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none}
+.rh-skip:focus{top:12px}
+.rh-header a:focus-visible,.rh-header button:focus-visible,.rh-skip:focus-visible{outline:3px solid #0871ca;outline-offset:3px}
+
+/* Header */
+.rh-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #dce6ee;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+.rh-header-inner{display:flex;align-items:center;gap:28px;min-height:84px}
+.rh-logo{display:block;flex:none}
+.rh-logo img{display:block;width:172px;height:auto}
+.rh-nav{display:flex;align-items:center;gap:30px;margin-left:auto}
+.rh-nav a{position:relative;color:#0b3158;text-decoration:none;font-weight:650;font-size:.98rem;padding:6px 0}
+.rh-nav a:hover{color:#0871ca}
+.rh-nav a[aria-current]{color:#0871ca}
+.rh-nav a[aria-current]::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;border-radius:2px;background:#0871ca}
+.rh-contact{display:inline-flex;align-items:center;padding:12px 22px;border-radius:999px;background:#0871ca;color:#fff;text-decoration:none;font-weight:750;font-size:.95rem;white-space:nowrap}
+.rh-contact:hover{background:#065fa9;color:#fff}
+.rh-menu-btn{display:none;margin-left:auto;padding:12px 26px;border:1px solid #dce6ee;border-radius:999px;background:#fff;color:#0b3158;font:inherit;font-weight:650;font-size:1rem;cursor:pointer}
+.rh-mobile-nav{border-top:1px solid #dce6ee;background:#fff}
+.rh-mobile-nav[hidden]{display:none}
+.rh-mobile-nav ul{list-style:none;margin:0 auto;padding:8px 0 16px;width:min(1180px,100% - 32px)}
+.rh-mobile-nav a{display:block;padding:12px 4px;color:#0b3158;font-weight:650;text-decoration:none;border-bottom:1px solid #eef3f7}
+.rh-mobile-nav a[aria-current]{color:#0871ca}
+.rh-mobile-nav li:last-child a{border-bottom:0;color:#0871ca}
+
+/* Footer */
+.rh-footer{background:#061d31;color:#d9e6ef;padding:44px 0 28px;font-size:.95rem;line-height:1.6;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.rh-footer-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,3fr);gap:40px;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.12)}
+.rh-footer strong{color:#fff;font-size:1.05rem}
+.rh-footer p{margin:6px 0 0}
+.rh-footer a{color:#fff}
+.rh-footer a:focus-visible{outline:3px solid #7fe3ea;outline-offset:3px}
+.rh-footer-cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
+.rh-footer-cols h2{margin:0 0 10px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#7fe3ea;font-weight:800;line-height:1.4}
+.rh-footer-cols ul{margin:0;padding:0;list-style:none}
+.rh-footer-cols li{margin:0 0 6px}
+.rh-footer-cols a{text-decoration:none;color:#e6eef4;font-size:.92rem}
+.rh-footer-cols a:hover{text-decoration:underline;color:#fff}
+.rh-footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:20px;color:#b7c8d6}
+
+@media (max-width:900px){
+  .rh-nav,.rh-header-inner>.rh-contact{display:none}
+  .rh-menu-btn{display:inline-flex}
+  .rh-footer-top{grid-template-columns:1fr}
+  .rh-footer-cols{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:600px){
+  .rh-header-inner{min-height:72px}
+  .rh-logo img{width:140px}
+}
