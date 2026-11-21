@@ -136,3 +136,19 @@
 
 /* Comfortable tap targets for the store card links */
 .rh-links .rh-link{display:inline-flex;align-items:center;min-height:44px}
+
+/* Contracts-first homepage */
+.rh-store-grid.rh-grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.rh-card-text{margin:0 0 20px;color:var(--rh-muted)}
+.rh-result-text{margin:0 0 12px;color:var(--rh-muted)}
+.rh-steps-cta{margin-top:28px}
+.rh-small .rh-link{display:inline}
+.rh-business-panel.rh-repairs-panel{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}
+.rh-shop-links{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rh-shop-links a{display:flex;flex-direction:column;gap:2px;min-height:44px;padding:14px 16px;border-radius:16px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#fff;text-decoration:none}
+.rh-shop-links a:hover{background:rgba(255,255,255,.12)}
+.rh-shop-links strong{font-size:1.05rem}
+.rh-shop-links span{font-size:.9rem;color:#d9e6ef}
+@media (max-width:860px){.rh-store-grid.rh-grid-3{grid-template-columns:1fr}}
+@media (max-width:900px){.rh-business-panel.rh-repairs-panel{grid-template-columns:1fr}}
+@media (max-width:420px){.rh-shop-links{grid-template-columns:1fr}}
